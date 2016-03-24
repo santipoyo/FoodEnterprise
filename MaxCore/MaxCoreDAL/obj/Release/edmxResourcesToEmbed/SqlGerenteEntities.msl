@@ -1,0 +1,1470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="SqlGerenteModelStoreContainer" CdmEntityContainer="SqlGerenteEntities">
+    <EntitySetMapping Name="Acceso">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Acceso">
+        <MappingFragment StoreEntitySet="Acceso">
+          <ScalarProperty Name="Cod_Acceso" ColumnName="Cod_Acceso" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Area">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="Cod_Area" ColumnName="Cod_Area" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articulos">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Articulos">
+        <MappingFragment StoreEntitySet="Articulos">
+          <ScalarProperty Name="Cod_Articulo" ColumnName="Cod_Articulo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Unidad_Compra" ColumnName="Unidad_Compra" />
+          <ScalarProperty Name="Unidad_Inventario" ColumnName="Unidad_Inventario" />
+          <ScalarProperty Name="Unidad_Receta" ColumnName="Unidad_Receta" />
+          <ScalarProperty Name="CostoCompra_UIO" ColumnName="CostoCompra_UIO" />
+          <ScalarProperty Name="CostoCompra_GYE" ColumnName="CostoCompra_GYE" />
+          <ScalarProperty Name="CostoCompra_BOD" ColumnName="CostoCompra_BOD" />
+          <ScalarProperty Name="CostoInventario_UIO" ColumnName="CostoInventario_UIO" />
+          <ScalarProperty Name="CostoInventario_GYE" ColumnName="CostoInventario_GYE" />
+          <ScalarProperty Name="CostoInventario_BOD" ColumnName="CostoInventario_BOD" />
+          <ScalarProperty Name="CostoReceta_UIO" ColumnName="CostoReceta_UIO" />
+          <ScalarProperty Name="CostoReceta_GYE" ColumnName="CostoReceta_GYE" />
+          <ScalarProperty Name="CostoReceta_BOD" ColumnName="CostoReceta_BOD" />
+          <ScalarProperty Name="GrupoDespacho" ColumnName="GrupoDespacho" />
+          <ScalarProperty Name="ImpuestoV" ColumnName="ImpuestoV" />
+          <ScalarProperty Name="Impuesto" ColumnName="Impuesto" />
+          <ScalarProperty Name="ABR_Bajar" ColumnName="ABR_Bajar" />
+          <ScalarProperty Name="Convert_INV" ColumnName="Convert_INV" />
+          <ScalarProperty Name="Convert_REC" ColumnName="Convert_REC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cadena">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Cadena">
+        <MappingFragment StoreEntitySet="Cadena">
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Cod_Cliente" ColumnName="Cod_Cliente" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Compania" ColumnName="Compania" />
+          <ScalarProperty Name="ABR" ColumnName="ABR" />
+          <ScalarProperty Name="Letra_Cadena" ColumnName="Letra_Cadena" />
+          <ScalarProperty Name="Dimension" ColumnName="Dimension" />
+          <ScalarProperty Name="Dimension_Planta" ColumnName="Dimension_Planta" />
+          <ScalarProperty Name="Porcen_Canjes" ColumnName="Porcen_Canjes" />
+          <ScalarProperty Name="Tipo_Regalia" ColumnName="Tipo_Regalia" />
+          <ScalarProperty Name="Monedas_Tevcol" ColumnName="Monedas_Tevcol" />
+          <ScalarProperty Name="Tipo_Impuesto" ColumnName="Tipo_Impuesto" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="DestinoAX" ColumnName="DestinoAX" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Plus_Domicilio" ColumnName="Plus_Domicilio" />
+          <ScalarProperty Name="Tolerancia" ColumnName="Tolerancia" />
+          <ScalarProperty Name="Stock_Inventario" ColumnName="Stock_Inventario" />
+          <ScalarProperty Name="Inicial_Cadena" ColumnName="Inicial_Cadena" />
+          <ScalarProperty Name="DepositoPixel" ColumnName="DepositoPixel" />
+          <ScalarProperty Name="Nombre_Comercial" ColumnName="Nombre_Comercial" />
+          <ScalarProperty Name="Cod_empresa" ColumnName="Cod_empresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calle">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Calle">
+        <MappingFragment StoreEntitySet="Calle">
+          <ScalarProperty Name="Cod_Calle" ColumnName="Cod_Calle" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cod_Ciudad" ColumnName="Cod_Ciudad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calle_Restaurante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Calle_Restaurante">
+        <MappingFragment StoreEntitySet="Calle_Restaurante">
+          <ScalarProperty Name="Cod_Calle" ColumnName="Cod_Calle" />
+          <ScalarProperty Name="Cod_Area" ColumnName="Cod_Area" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calles_Back">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Calles_Back">
+        <MappingFragment StoreEntitySet="Calles_Back">
+          <ScalarProperty Name="Cod_Calle_Back" ColumnName="Cod_Calle_Back" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categoria">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Categoria">
+        <MappingFragment StoreEntitySet="Categoria">
+          <ScalarProperty Name="Cod_Categoria" ColumnName="Cod_Categoria" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="ABR" ColumnName="ABR" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudad">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Ciudad">
+        <MappingFragment StoreEntitySet="Ciudad">
+          <ScalarProperty Name="Cod_Ciudad" ColumnName="Cod_Ciudad" />
+          <ScalarProperty Name="Cod_Provincia" ColumnName="Cod_Provincia" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Prefijo" ColumnName="Prefijo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clasificacion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Clasificacion">
+        <MappingFragment StoreEntitySet="Clasificacion">
+          <ScalarProperty Name="Cod_Clasificacion" ColumnName="Cod_Clasificacion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clave_contingencia">
+      <EntityTypeMapping TypeName="SqlGerenteModel.clave_contingencia">
+        <MappingFragment StoreEntitySet="clave_contingencia">
+          <ScalarProperty Name="Clave_Contingencia1" ColumnName="Clave_Contingencia" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fecha_Carga" ColumnName="Fecha_Carga" />
+          <ScalarProperty Name="Fecha_Uso" ColumnName="Fecha_Uso" />
+          <ScalarProperty Name="Cod_Movimiento" ColumnName="Cod_Movimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Cliente_Domicilio">
+        <MappingFragment StoreEntitySet="Cliente_Domicilio">
+          <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+          <ScalarProperty Name="Ruc_Cedula" ColumnName="Ruc_Cedula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Tipo_Documento" ColumnName="Cod_Tipo_Documento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientesAx">
+      <EntityTypeMapping TypeName="SqlGerenteModel.ClientesAx">
+        <MappingFragment StoreEntitySet="ClientesAx">
+          <ScalarProperty Name="Cod_Cliente" ColumnName="Cod_Cliente" />
+          <ScalarProperty Name="CodigoAX" ColumnName="CodigoAX" />
+          <ScalarProperty Name="RUC" ColumnName="RUC" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+          <ScalarProperty Name="ModoPago" ColumnName="ModoPago" />
+          <ScalarProperty Name="TipoCliente" ColumnName="TipoCliente" />
+          <ScalarProperty Name="NombreInterfaz" ColumnName="NombreInterfaz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compania">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Compania">
+        <MappingFragment StoreEntitySet="Compania">
+          <ScalarProperty Name="Cod_Compania" ColumnName="Cod_Compania" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Config_RecetaSugerencia">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Config_RecetaSugerencia">
+        <MappingFragment StoreEntitySet="Config_RecetaSugerencia">
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configuracion_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Configuracion_Domicilio">
+        <MappingFragment StoreEntitySet="Configuracion_Domicilio">
+          <ScalarProperty Name="Cod_Configuracion" ColumnName="Cod_Configuracion" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Conex_BD" ColumnName="Conex_BD" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Menu" ColumnName="Menu" />
+          <ScalarProperty Name="Orden_Seleccion" ColumnName="Orden_Seleccion" />
+          <ScalarProperty Name="Recargo" ColumnName="Recargo" />
+          <ScalarProperty Name="Impresion" ColumnName="Impresion" />
+          <ScalarProperty Name="Tiempo_Espera" ColumnName="Tiempo_Espera" />
+          <ScalarProperty Name="Archivo_Impresion" ColumnName="Archivo_Impresion" />
+          <ScalarProperty Name="Numero_Impresiones" ColumnName="Numero_Impresiones" />
+          <ScalarProperty Name="Call_Center" ColumnName="Call_Center" />
+          <ScalarProperty Name="Num_Lineas" ColumnName="Num_Lineas" />
+          <ScalarProperty Name="Num_Comandas" ColumnName="Num_Comandas" />
+          <ScalarProperty Name="Tiempo_Retorno" ColumnName="Tiempo_Retorno" />
+          <ScalarProperty Name="Seguridad" ColumnName="Seguridad" />
+          <ScalarProperty Name="Transferencia" ColumnName="Transferencia" />
+          <ScalarProperty Name="Tiempo_Entrega" ColumnName="Tiempo_Entrega" />
+          <ScalarProperty Name="Tiempo_Recepcion" ColumnName="Tiempo_Recepcion" />
+          <ScalarProperty Name="Credito" ColumnName="Credito" />
+          <ScalarProperty Name="Tiempo_RRetorno" ColumnName="Tiempo_RRetorno" />
+          <ScalarProperty Name="Cod_Local" ColumnName="Cod_Local" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conversion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Conversion">
+        <MappingFragment StoreEntitySet="Conversion">
+          <ScalarProperty Name="Cod_Conversion" ColumnName="Cod_Conversion" />
+          <ScalarProperty Name="Factor_Conversion" ColumnName="Factor_Conversion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeptoPlus">
+      <EntityTypeMapping TypeName="SqlGerenteModel.DeptoPlus">
+        <MappingFragment StoreEntitySet="DeptoPlus">
+          <ScalarProperty Name="Cod_DeptoPlu" ColumnName="Cod_DeptoPlu" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Num_Depto" ColumnName="Num_Depto" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Descuentos_Cadena">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Descuentos_Cadena">
+        <MappingFragment StoreEntitySet="Descuentos_Cadena">
+          <ScalarProperty Name="Cod_Descuento_Cadena" ColumnName="Cod_Descuento_Cadena" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Maximo" ColumnName="Maximo" />
+          <ScalarProperty Name="Minimo" ColumnName="Minimo" />
+          <ScalarProperty Name="Intervalo" ColumnName="Intervalo" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_Factura">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Detalle_Factura">
+        <MappingFragment StoreEntitySet="Detalle_Factura">
+          <ScalarProperty Name="Cod_Detalle_Factura" ColumnName="Cod_Detalle_Factura" />
+          <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Descuento_con_Impuesto" ColumnName="Descuento_con_Impuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_Nota_Credito">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Detalle_Nota_Credito">
+        <MappingFragment StoreEntitySet="Detalle_Nota_Credito">
+          <ScalarProperty Name="Cod_Detalle_Nota_Credito" ColumnName="Cod_Detalle_Nota_Credito" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Descuento_con_Impuesto" ColumnName="Descuento_con_Impuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DinDomicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.DinDomicilio">
+        <MappingFragment StoreEntitySet="DinDomicilio">
+          <ScalarProperty Name="Cod_DinDomicilio" ColumnName="Cod_DinDomicilio" />
+          <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+          <ScalarProperty Name="Base_caja" ColumnName="Base_caja" />
+          <ScalarProperty Name="Num_Efectivo" ColumnName="Num_Efectivo" />
+          <ScalarProperty Name="Num_cheques" ColumnName="Num_cheques" />
+          <ScalarProperty Name="Num_tarjetas_credito" ColumnName="Num_tarjetas_credito" />
+          <ScalarProperty Name="Val_Efectivo" ColumnName="Val_Efectivo" />
+          <ScalarProperty Name="Val_cheques" ColumnName="Val_cheques" />
+          <ScalarProperty Name="Val_tarjetas_credito" ColumnName="Val_tarjetas_credito" />
+          <ScalarProperty Name="Comandas_extra" ColumnName="Comandas_extra" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Domicilio_Cierre">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Domicilio_Cierre">
+        <MappingFragment StoreEntitySet="Domicilio_Cierre">
+          <ScalarProperty Name="Cod_domicilio_cierre" ColumnName="Cod_domicilio_cierre" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Forma_pago" ColumnName="Forma_pago" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Domicilio_Mix">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Domicilio_Mix">
+        <MappingFragment StoreEntitySet="Domicilio_Mix">
+          <ScalarProperty Name="Cod_domicilio_mix" ColumnName="Cod_domicilio_mix" />
+          <ScalarProperty Name="Cod_plu" ColumnName="Cod_plu" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="Cod_empresa" ColumnName="Cod_empresa" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Ruc" ColumnName="Ruc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Fechainicio" ColumnName="Fechainicio" />
+          <ScalarProperty Name="Fechafin" ColumnName="Fechafin" />
+          <ScalarProperty Name="Cod_pais" ColumnName="Cod_pais" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Razon_social" ColumnName="Razon_social" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Tipo_contribuyente" ColumnName="Tipo_contribuyente" />
+          <ScalarProperty Name="fecha_resolucion" ColumnName="fecha_resolucion" />
+          <ScalarProperty Name="Certificado" ColumnName="Certificado" />
+          <ScalarProperty Name="Pass_certificado" ColumnName="Pass_certificado" />
+          <ScalarProperty Name="ObligadoContabilidad" ColumnName="ObligadoContabilidad" />
+          <ScalarProperty Name="Cod_Tipo_Emision" ColumnName="Cod_Tipo_Emision" />
+          <ScalarProperty Name="Cod_Tipo_Ambiente" ColumnName="Cod_Tipo_Ambiente" />
+          <ScalarProperty Name="Numero_Resolucion" ColumnName="Numero_Resolucion" />
+          <ScalarProperty Name="Resolucion" ColumnName="Resolucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresas">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Empresas">
+        <MappingFragment StoreEntitySet="Empresas">
+          <ScalarProperty Name="Cod_empresa" ColumnName="Cod_empresa" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Ruc" ColumnName="Ruc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Fechainicio" ColumnName="Fechainicio" />
+          <ScalarProperty Name="Fechafin" ColumnName="Fechafin" />
+          <ScalarProperty Name="Cod_pais" ColumnName="Cod_pais" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Razon_social" ColumnName="Razon_social" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Tipo_contribuyente" ColumnName="Tipo_contribuyente" />
+          <ScalarProperty Name="fecha_resolucion" ColumnName="fecha_resolucion" />
+          <ScalarProperty Name="Certificado" ColumnName="Certificado" />
+          <ScalarProperty Name="Pass_certificado" ColumnName="Pass_certificado" />
+          <ScalarProperty Name="ObligadoContabilidad" ColumnName="ObligadoContabilidad" />
+          <ScalarProperty Name="Cod_Tipo_Emision" ColumnName="Cod_Tipo_Emision" />
+          <ScalarProperty Name="Cod_Tipo_Ambiente" ColumnName="Cod_Tipo_Ambiente" />
+          <ScalarProperty Name="Numero_Resolucion" ColumnName="Numero_Resolucion" />
+          <ScalarProperty Name="Resolucion" ColumnName="Resolucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnvioCorreos">
+      <EntityTypeMapping TypeName="SqlGerenteModel.EnvioCorreos">
+        <MappingFragment StoreEntitySet="EnvioCorreos">
+          <ScalarProperty Name="Cod_Envio" ColumnName="Cod_Envio" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Estados_Domicilio">
+        <MappingFragment StoreEntitySet="Estados_Domicilio">
+          <ScalarProperty Name="Cod_Estado" ColumnName="Cod_Estado" />
+          <ScalarProperty Name="Factura" ColumnName="Factura" />
+          <ScalarProperty Name="Asignacion" ColumnName="Asignacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_Anulacion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Factura_Anulacion">
+        <MappingFragment StoreEntitySet="Factura_Anulacion">
+          <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+          <ScalarProperty Name="Cod_Motivo" ColumnName="Cod_Motivo" />
+          <ScalarProperty Name="Cod_Administrador" ColumnName="Cod_Administrador" />
+          <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Factura_Domicilio">
+        <MappingFragment StoreEntitySet="Factura_Domicilio">
+          <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Cod_Administrador" ColumnName="Cod_Administrador" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Consumidor_Final" ColumnName="Consumidor_Final" />
+          <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+          <ScalarProperty Name="Transferencia" ColumnName="Transferencia" />
+          <ScalarProperty Name="Fecha_Creacion" ColumnName="Fecha_Creacion" />
+          <ScalarProperty Name="DescuentoIVA" ColumnName="DescuentoIVA" />
+          <ScalarProperty Name="DescuentoNoIVA" ColumnName="DescuentoNoIVA" />
+          <ScalarProperty Name="Estado_Transferencia" ColumnName="Estado_Transferencia" />
+          <ScalarProperty Name="Direccion_Alterna" ColumnName="Direccion_Alterna" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Cod_Usuario_Descto" ColumnName="Cod_Usuario_Descto" />
+          <ScalarProperty Name="Propina" ColumnName="Propina" />
+          <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+          <ScalarProperty Name="Tipo_Facturacion" ColumnName="Tipo_Facturacion" />
+          <ScalarProperty Name="Cod_Tipo_Comprobante" ColumnName="Cod_Tipo_Comprobante" />
+          <ScalarProperty Name="Clave_Acceso" ColumnName="Clave_Acceso" />
+          <ScalarProperty Name="Numero_Factura" ColumnName="Numero_Factura" />
+          <ScalarProperty Name="Autorizado" ColumnName="Autorizado" />
+          <ScalarProperty Name="Datos_Adicionales" ColumnName="Datos_Adicionales" />
+          <ScalarProperty Name="FechaOperacion" ColumnName="FechaOperacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_FormasPago">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Factura_FormasPago">
+        <MappingFragment StoreEntitySet="Factura_FormasPago">
+          <ScalarProperty Name="Cod_FFormasPago" ColumnName="Cod_FFormasPago" />
+          <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+          <ScalarProperty Name="Num_Tarjeta" ColumnName="Num_Tarjeta" />
+          <ScalarProperty Name="Num_Seguridad" ColumnName="Num_Seguridad" />
+          <ScalarProperty Name="Fecha_Caducidad" ColumnName="Fecha_Caducidad" />
+          <ScalarProperty Name="Billete" ColumnName="Billete" />
+          <ScalarProperty Name="NumeroCheque" ColumnName="NumeroCheque" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="Referencia_Billete" ColumnName="Referencia_Billete" />
+          <ScalarProperty Name="Valor_Billete" ColumnName="Valor_Billete" />
+          <ScalarProperty Name="Total_Pagar" ColumnName="Total_Pagar" />
+          <ScalarProperty Name="Propina" ColumnName="Propina" />
+          <ScalarProperty Name="ClienteAx" ColumnName="ClienteAx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormasPago">
+      <EntityTypeMapping TypeName="SqlGerenteModel.FormasPago">
+        <MappingFragment StoreEntitySet="FormasPago">
+          <ScalarProperty Name="Cod_FormaPago" ColumnName="Cod_FormaPago" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Desglose" ColumnName="Desglose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GruposArt">
+      <EntityTypeMapping TypeName="SqlGerenteModel.GruposArt">
+        <MappingFragment StoreEntitySet="GruposArt">
+          <ScalarProperty Name="Cod_GrupoArt" ColumnName="Cod_GrupoArt" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Impuestos">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Impuestos">
+        <MappingFragment StoreEntitySet="Impuestos">
+          <ScalarProperty Name="Cod_Impuesto" ColumnName="Cod_Impuesto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inmueble">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Inmueble">
+        <MappingFragment StoreEntitySet="Inmueble">
+          <ScalarProperty Name="Cod_Inmueble" ColumnName="Cod_Inmueble" />
+          <ScalarProperty Name="Cod_Tipo_Inmueble" ColumnName="Cod_Tipo_Inmueble" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cod_Calle1" ColumnName="Cod_Calle1" />
+          <ScalarProperty Name="Cod_Calle2" ColumnName="Cod_Calle2" />
+          <ScalarProperty Name="Cod_ZipCode" ColumnName="Cod_ZipCode" />
+          <ScalarProperty Name="Num_Direccion" ColumnName="Num_Direccion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Calle_Back1" ColumnName="Cod_Calle_Back1" />
+          <ScalarProperty Name="Cod_Calle_Back2" ColumnName="Cod_Calle_Back2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log_Facturacion_Electronica">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Log_Facturacion_Electronica">
+        <MappingFragment StoreEntitySet="Log_Facturacion_Electronica">
+          <ScalarProperty Name="lg_id" ColumnName="lg_id" />
+          <ScalarProperty Name="lg_clave_acceso" ColumnName="lg_clave_acceso" />
+          <ScalarProperty Name="lg_estado" ColumnName="lg_estado" />
+          <ScalarProperty Name="lg_mensaje" ColumnName="lg_mensaje" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Cod_factura" ColumnName="Cod_factura" />
+          <ScalarProperty Name="lg_fecha" ColumnName="lg_fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modificador">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Modificador">
+        <MappingFragment StoreEntitySet="Modificador">
+          <ScalarProperty Name="Cod_Modificador" ColumnName="Cod_Modificador" />
+          <ScalarProperty Name="Cod_Tipo_Modificador" ColumnName="Cod_Tipo_Modificador" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motorolos">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Motorolos">
+        <MappingFragment StoreEntitySet="Motorolos">
+          <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+          <ScalarProperty Name="Cod_Compania" ColumnName="Cod_Compania" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Cod_Tarjeta" ColumnName="Cod_Tarjeta" />
+          <ScalarProperty Name="Cod_Nomina" ColumnName="Cod_Nomina" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NivelesPyG">
+      <EntityTypeMapping TypeName="SqlGerenteModel.NivelesPyG">
+        <MappingFragment StoreEntitySet="NivelesPyG">
+          <ScalarProperty Name="Cod_Grupo" ColumnName="Cod_Grupo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="OrdenImpresion" ColumnName="OrdenImpresion" />
+          <ScalarProperty Name="Operador" ColumnName="Operador" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nota_Credito">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Nota_Credito">
+        <MappingFragment StoreEntitySet="Nota_Credito">
+          <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Cod_Administrador" ColumnName="Cod_Administrador" />
+          <ScalarProperty Name="Estado_Transferencia" ColumnName="Estado_Transferencia" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Consumidor_Final" ColumnName="Consumidor_Final" />
+          <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+          <ScalarProperty Name="Transferencia" ColumnName="Transferencia" />
+          <ScalarProperty Name="Fecha_Creacion" ColumnName="Fecha_Creacion" />
+          <ScalarProperty Name="DescuentoIVA" ColumnName="DescuentoIVA" />
+          <ScalarProperty Name="DescuentoNoIVA" ColumnName="DescuentoNoIVA" />
+          <ScalarProperty Name="Direccion_Alterna" ColumnName="Direccion_Alterna" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Cod_Usuario_Descto" ColumnName="Cod_Usuario_Descto" />
+          <ScalarProperty Name="Propina" ColumnName="Propina" />
+          <ScalarProperty Name="Clave_Acceso" ColumnName="Clave_Acceso" />
+          <ScalarProperty Name="Tipo_Facturacion" ColumnName="Tipo_Facturacion" />
+          <ScalarProperty Name="Autorizado" ColumnName="Autorizado" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="FechaOperacion" ColumnName="FechaOperacion" />
+          <ScalarProperty Name="Datos_Adicionales" ColumnName="Datos_Adicionales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="Cod_Pais" ColumnName="Cod_Pais" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Moneda" ColumnName="Moneda" />
+          <ScalarProperty Name="Tipo_Cambio" ColumnName="Tipo_Cambio" />
+          <ScalarProperty Name="Grupo_Impuestos" ColumnName="Grupo_Impuestos" />
+          <ScalarProperty Name="Diferencia_Cierre" ColumnName="Diferencia_Cierre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="SO" ColumnName="SO" />
+          <ScalarProperty Name="Valor_Inventario" ColumnName="Valor_Inventario" />
+          <ScalarProperty Name="Monto_Factura" ColumnName="Monto_Factura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pantalla">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Pantalla">
+        <MappingFragment StoreEntitySet="Pantalla">
+          <ScalarProperty Name="Cod_Pantalla" ColumnName="Cod_Pantalla" />
+          <ScalarProperty Name="Nombre_Mostrar" ColumnName="Nombre_Mostrar" />
+          <ScalarProperty Name="Nombre_Formulario" ColumnName="Nombre_Formulario" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Orden_Menu" ColumnName="Orden_Menu" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Ecuador" ColumnName="Ecuador" />
+          <ScalarProperty Name="Venezuela" ColumnName="Venezuela" />
+          <ScalarProperty Name="Colombia" ColumnName="Colombia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paquete">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Paquete">
+        <MappingFragment StoreEntitySet="Paquete">
+          <ScalarProperty Name="Cod_Paquete" ColumnName="Cod_Paquete" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Fecha_Caducidad" ColumnName="Fecha_Caducidad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="Cod_Perfil" ColumnName="Cod_Perfil" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Periodo">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Periodo">
+        <MappingFragment StoreEntitySet="Periodo">
+          <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Inicial" ColumnName="Inicial" />
+          <ScalarProperty Name="Final" ColumnName="Final" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermisosPerfil">
+      <EntityTypeMapping TypeName="SqlGerenteModel.PermisosPerfil">
+        <MappingFragment StoreEntitySet="PermisosPerfil">
+          <ScalarProperty Name="Cod_Acceso" ColumnName="Cod_Acceso" />
+          <ScalarProperty Name="Cod_Perfil" ColumnName="Cod_Perfil" />
+          <ScalarProperty Name="Cod_Pantalla" ColumnName="Cod_Pantalla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personal_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Personal_Domicilio">
+        <MappingFragment StoreEntitySet="Personal_Domicilio">
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Fecha_Ingreso" ColumnName="Fecha_Ingreso" />
+          <ScalarProperty Name="Tipo_Empleado" ColumnName="Tipo_Empleado" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plu_Promocion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Plu_Promocion">
+        <MappingFragment StoreEntitySet="Plu_Promocion">
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cod_Plu_Promocion" ColumnName="Cod_Plu_Promocion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plu_Sujeto">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Plu_Sujeto">
+        <MappingFragment StoreEntitySet="Plu_Sujeto">
+          <ScalarProperty Name="Cod_Plu_Promocion" ColumnName="Cod_Plu_Promocion" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plus">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Plus">
+        <MappingFragment StoreEntitySet="Plus">
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Cod_DeptoPlu" ColumnName="Cod_DeptoPlu" />
+          <ScalarProperty Name="Cod_Multiple" ColumnName="Cod_Multiple" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Num_Plu" ColumnName="Num_Plu" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Clasificacion" ColumnName="Cod_Clasificacion" />
+          <ScalarProperty Name="Impuesto" ColumnName="Impuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Precio_plu">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Precio_plu">
+        <MappingFragment StoreEntitySet="Precio_plu">
+          <ScalarProperty Name="Cod_Precio_plu" ColumnName="Cod_Precio_plu" />
+          <ScalarProperty Name="Cod_Categoria" ColumnName="Cod_Categoria" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Valor_Neto" ColumnName="Valor_Neto" />
+          <ScalarProperty Name="Valor_Iva" ColumnName="Valor_Iva" />
+          <ScalarProperty Name="Pvp" ColumnName="Pvp" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Promocion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Promocion">
+        <MappingFragment StoreEntitySet="Promocion">
+          <ScalarProperty Name="Cod_Promocion" ColumnName="Cod_Promocion" />
+          <ScalarProperty Name="Cod_Tipo_Promocion" ColumnName="Cod_Tipo_Promocion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Fecha_Caducidad" ColumnName="Fecha_Caducidad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedor">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Proveedor">
+        <MappingFragment StoreEntitySet="Proveedor">
+          <ScalarProperty Name="Cod_Proveedor" ColumnName="Cod_Proveedor" />
+          <ScalarProperty Name="CodigoAX" ColumnName="CodigoAX" />
+          <ScalarProperty Name="Cod_Tienda" ColumnName="Cod_Tienda" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Ruc" ColumnName="Ruc" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="CuentaBanco" ColumnName="CuentaBanco" />
+          <ScalarProperty Name="ModoPago" ColumnName="ModoPago" />
+          <ScalarProperty Name="GrupoProveedor" ColumnName="GrupoProveedor" />
+          <ScalarProperty Name="TerminoPago" ColumnName="TerminoPago" />
+          <ScalarProperty Name="Moneda" ColumnName="Moneda" />
+          <ScalarProperty Name="LineaProveedor" ColumnName="LineaProveedor" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Planta" ColumnName="Planta" />
+          <ScalarProperty Name="Compras" ColumnName="Compras" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provincia">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Provincia">
+        <MappingFragment StoreEntitySet="Provincia">
+          <ScalarProperty Name="Cod_Provincia" ColumnName="Cod_Provincia" />
+          <ScalarProperty Name="Cod_Region" ColumnName="Cod_Region" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recetas">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Recetas">
+        <MappingFragment StoreEntitySet="Recetas">
+          <ScalarProperty Name="Cod_Receta" ColumnName="Cod_Receta" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cod_Subrecet" ColumnName="Cod_Subrecet" />
+          <ScalarProperty Name="Cod_Ubicacion_Cadenas" ColumnName="Cod_Ubicacion_Cadenas" />
+          <ScalarProperty Name="Cod_Articulo" ColumnName="Cod_Articulo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecetaSugerencia">
+      <EntityTypeMapping TypeName="SqlGerenteModel.RecetaSugerencia">
+        <MappingFragment StoreEntitySet="RecetaSugerencia">
+          <ScalarProperty Name="Cod_RecetaSugerencia" ColumnName="Cod_RecetaSugerencia" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Cod_Subrecet" ColumnName="Cod_Subrecet" />
+          <ScalarProperty Name="Cod_Ubicacion_Cadenas" ColumnName="Cod_Ubicacion_Cadenas" />
+          <ScalarProperty Name="Cod_Articulo" ColumnName="Cod_Articulo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="Cod_Region" ColumnName="Cod_Region" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="ABR" ColumnName="ABR" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuesta_Autorizacion_Comprobante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Respuesta_Autorizacion_Comprobante">
+        <MappingFragment StoreEntitySet="Respuesta_Autorizacion_Comprobante">
+          <ScalarProperty Name="rsp_claveAcceso" ColumnName="rsp_claveAcceso" />
+          <ScalarProperty Name="rsp_estado_autorizacion" ColumnName="rsp_estado_autorizacion" />
+          <ScalarProperty Name="rsp_autorizacion" ColumnName="rsp_autorizacion" />
+          <ScalarProperty Name="rsp_ambiente" ColumnName="rsp_ambiente" />
+          <ScalarProperty Name="rsp_fecha_autorizacion" ColumnName="rsp_fecha_autorizacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuesta_Recepcion_Comprobante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Respuesta_Recepcion_Comprobante">
+        <MappingFragment StoreEntitySet="Respuesta_Recepcion_Comprobante">
+          <ScalarProperty Name="rcp_id" ColumnName="rcp_id" />
+          <ScalarProperty Name="rcp_clave_acceso" ColumnName="rcp_clave_acceso" />
+          <ScalarProperty Name="rcp_estado" ColumnName="rcp_estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Restaurante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Restaurante">
+        <MappingFragment StoreEntitySet="Restaurante">
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Cod_Ciudad" ColumnName="Cod_Ciudad" />
+          <ScalarProperty Name="Cod_Categoria" ColumnName="Cod_Categoria" />
+          <ScalarProperty Name="Cod_Registradora" ColumnName="Cod_Registradora" />
+          <ScalarProperty Name="Cod_TipoRestaurante" ColumnName="Cod_TipoRestaurante" />
+          <ScalarProperty Name="Cod_Tienda" ColumnName="Cod_Tienda" />
+          <ScalarProperty Name="Nombre_ODBC" ColumnName="Nombre_ODBC" />
+          <ScalarProperty Name="Planta" ColumnName="Planta" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Dimension_AX" ColumnName="Dimension_AX" />
+          <ScalarProperty Name="Numero_Luch" ColumnName="Numero_Luch" />
+          <ScalarProperty Name="Filtro_Articulos" ColumnName="Filtro_Articulos" />
+          <ScalarProperty Name="Fisica_Dias" ColumnName="Fisica_Dias" />
+          <ScalarProperty Name="PYG_Dias" ColumnName="PYG_Dias" />
+          <ScalarProperty Name="Servicio" ColumnName="Servicio" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Ubicacion_Cadenas" ColumnName="Cod_Ubicacion_Cadenas" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Gerente_Local" ColumnName="Gerente_Local" />
+          <ScalarProperty Name="Fecha_Apertura" ColumnName="Fecha_Apertura" />
+          <ScalarProperty Name="Fecha_Cierre" ColumnName="Fecha_Cierre" />
+          <ScalarProperty Name="Codigo_SRI" ColumnName="Codigo_SRI" />
+          <ScalarProperty Name="Tamano" ColumnName="Tamano" />
+          <ScalarProperty Name="Localizacion" ColumnName="Localizacion" />
+          <ScalarProperty Name="Costeo" ColumnName="Costeo" />
+          <ScalarProperty Name="Autoimpresor" ColumnName="Autoimpresor" />
+          <ScalarProperty Name="SwitchT" ColumnName="SwitchT" />
+          <ScalarProperty Name="Cupon_Automatico" ColumnName="Cupon_Automatico" />
+          <ScalarProperty Name="Prefijo" ColumnName="Prefijo" />
+          <ScalarProperty Name="Desde" ColumnName="Desde" />
+          <ScalarProperty Name="Hasta" ColumnName="Hasta" />
+          <ScalarProperty Name="Resolucion" ColumnName="Resolucion" />
+          <ScalarProperty Name="Fecha_Resolucion" ColumnName="Fecha_Resolucion" />
+          <ScalarProperty Name="CentroCostoPLT" ColumnName="CentroCostoPLT" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Num_Establec_SRI" ColumnName="Num_Establec_SRI" />
+          <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+          <ScalarProperty Name="PedidoSugerido" ColumnName="PedidoSugerido" />
+          <ScalarProperty Name="Tipo_Nomina" ColumnName="Tipo_Nomina" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="PuntoEmision" ColumnName="PuntoEmision" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubros">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Rubros">
+        <MappingFragment StoreEntitySet="Rubros">
+          <ScalarProperty Name="Cod_Rubros" ColumnName="Cod_Rubros" />
+          <ScalarProperty Name="Cta_Axapta" ColumnName="Cta_Axapta" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="OrdenPyG" ColumnName="OrdenPyG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Secuencia">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Secuencia">
+        <MappingFragment StoreEntitySet="Secuencia">
+          <ScalarProperty Name="Cod_Secuencia" ColumnName="Cod_Secuencia" />
+          <ScalarProperty Name="Num_Codigo" ColumnName="Num_Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Secuencia_Domicilio">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Secuencia_Domicilio">
+        <MappingFragment StoreEntitySet="Secuencia_Domicilio">
+          <ScalarProperty Name="Cod_Domi_Secuencia" ColumnName="Cod_Domi_Secuencia" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubRecet">
+      <EntityTypeMapping TypeName="SqlGerenteModel.SubRecet">
+        <MappingFragment StoreEntitySet="SubRecet">
+          <ScalarProperty Name="Cod_Subrecet" ColumnName="Cod_Subrecet" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Tipo_Subreceta" ColumnName="Tipo_Subreceta" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Num_Subreceta" ColumnName="Num_Subreceta" />
+          <ScalarProperty Name="Unidad_Receta" ColumnName="Unidad_Receta" />
+          <ScalarProperty Name="Unidad_Compra" ColumnName="Unidad_Compra" />
+          <ScalarProperty Name="Unidad_Inventario" ColumnName="Unidad_Inventario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubRecetaTrans">
+      <EntityTypeMapping TypeName="SqlGerenteModel.SubRecetaTrans">
+        <MappingFragment StoreEntitySet="SubRecetaTrans">
+          <ScalarProperty Name="Cod_SubReceta_Trans" ColumnName="Cod_SubReceta_Trans" />
+          <ScalarProperty Name="Cod_Subrecet" ColumnName="Cod_Subrecet" />
+          <ScalarProperty Name="Cod_Articulo" ColumnName="Cod_Articulo" />
+          <ScalarProperty Name="Cod_Articulo_Sub" ColumnName="Cod_Articulo_Sub" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="NumSubreceta" ColumnName="NumSubreceta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SqlGerenteModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Telefono_Cliente">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Telefono_Cliente">
+        <MappingFragment StoreEntitySet="Telefono_Cliente">
+          <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+          <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Telefonos">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Telefonos">
+        <MappingFragment StoreEntitySet="Telefonos">
+          <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Ciudad" ColumnName="Cod_Ciudad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Accion_Domi">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Accion_Domi">
+        <MappingFragment StoreEntitySet="Tipo_Accion_Domi">
+          <ScalarProperty Name="Cod_Accion_Domi" ColumnName="Cod_Accion_Domi" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Inicial" ColumnName="Inicial" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Ambiente">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Ambiente">
+        <MappingFragment StoreEntitySet="Tipo_Ambiente">
+          <ScalarProperty Name="Cod_Tipo_Ambiente" ColumnName="Cod_Tipo_Ambiente" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Comprobante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Comprobante">
+        <MappingFragment StoreEntitySet="Tipo_Comprobante">
+          <ScalarProperty Name="Cod_Tipo_Comprobante" ColumnName="Cod_Tipo_Comprobante" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Documento">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Documento">
+        <MappingFragment StoreEntitySet="Tipo_Documento">
+          <ScalarProperty Name="Cod_Tipo_Documento" ColumnName="Cod_Tipo_Documento" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="DescripcionSRI" ColumnName="DescripcionSRI" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Emision">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Emision">
+        <MappingFragment StoreEntitySet="Tipo_Emision">
+          <ScalarProperty Name="Cod_Tipo_Emision" ColumnName="Cod_Tipo_Emision" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Facturacion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Facturacion">
+        <MappingFragment StoreEntitySet="Tipo_Facturacion">
+          <ScalarProperty Name="Cod_Tipo_Facturacion" ColumnName="Cod_Tipo_Facturacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Inmueble">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Inmueble">
+        <MappingFragment StoreEntitySet="Tipo_Inmueble">
+          <ScalarProperty Name="Cod_Tipo_Inmueble" ColumnName="Cod_Tipo_Inmueble" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Modificador">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Modificador">
+        <MappingFragment StoreEntitySet="Tipo_Modificador">
+          <ScalarProperty Name="Cod_Tipo_Modificador" ColumnName="Cod_Tipo_Modificador" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Modificador_Plu">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Modificador_Plu">
+        <MappingFragment StoreEntitySet="Tipo_Modificador_Plu">
+          <ScalarProperty Name="Cod_Tipo_Modificador_Plu" ColumnName="Cod_Tipo_Modificador_Plu" />
+          <ScalarProperty Name="Cod_Tipo_Modificador" ColumnName="Cod_Tipo_Modificador" />
+          <ScalarProperty Name="Cod_Plu" ColumnName="Cod_Plu" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Promocion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Tipo_Promocion">
+        <MappingFragment StoreEntitySet="Tipo_Promocion">
+          <ScalarProperty Name="Cod_Tipo_Promocion" ColumnName="Cod_Tipo_Promocion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCCC">
+      <EntityTypeMapping TypeName="SqlGerenteModel.TipoCCC">
+        <MappingFragment StoreEntitySet="TipoCCC">
+          <ScalarProperty Name="Cod_Canje" ColumnName="Cod_Canje" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFormaPago">
+      <EntityTypeMapping TypeName="SqlGerenteModel.TipoFormaPago">
+        <MappingFragment StoreEntitySet="TipoFormaPago">
+          <ScalarProperty Name="Cod_TipoF" ColumnName="Cod_TipoF" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cod_Pais" ColumnName="Cod_Pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMov">
+      <EntityTypeMapping TypeName="SqlGerenteModel.TipoMov">
+        <MappingFragment StoreEntitySet="TipoMov">
+          <ScalarProperty Name="Cod_TipMovInv" ColumnName="Cod_TipMovInv" />
+          <ScalarProperty Name="Inicial_Secuencia" ColumnName="Inicial_Secuencia" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoRestaurante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.TipoRestaurante">
+        <MappingFragment StoreEntitySet="TipoRestaurante">
+          <ScalarProperty Name="Cod_TipoRestaurante" ColumnName="Cod_TipoRestaurante" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiposCuenta">
+      <EntityTypeMapping TypeName="SqlGerenteModel.TiposCuenta">
+        <MappingFragment StoreEntitySet="TiposCuenta">
+          <ScalarProperty Name="Cod_Tipo" ColumnName="Cod_Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicacion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Ubicacion">
+        <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="Cod_Ubicacion" ColumnName="Cod_Ubicacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UbicacionCadena">
+      <EntityTypeMapping TypeName="SqlGerenteModel.UbicacionCadena">
+        <MappingFragment StoreEntitySet="UbicacionCadena">
+          <ScalarProperty Name="Cod_Ubicacion_Cadenas" ColumnName="Cod_Ubicacion_Cadenas" />
+          <ScalarProperty Name="Cod_Ubicacion" ColumnName="Cod_Ubicacion" />
+          <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unidades">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Unidades">
+        <MappingFragment StoreEntitySet="Unidades">
+          <ScalarProperty Name="Cod_Unidad" ColumnName="Cod_Unidad" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRestaurante">
+      <EntityTypeMapping TypeName="SqlGerenteModel.UserRestaurante">
+        <MappingFragment StoreEntitySet="UserRestaurante">
+          <ScalarProperty Name="Cod_UserRestaurante" ColumnName="Cod_UserRestaurante" />
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Cod_Perfil" ColumnName="Cod_Perfil" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Iniciales" ColumnName="Iniciales" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha_creacion" ColumnName="Fecha_creacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zip">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Zip">
+        <MappingFragment StoreEntitySet="Zip">
+          <ScalarProperty Name="Cod_ZipCode" ColumnName="Cod_ZipCode" />
+          <ScalarProperty Name="Cod_Area" ColumnName="Cod_Area" />
+          <ScalarProperty Name="Cod_Zona" ColumnName="Cod_Zona" />
+          <ScalarProperty Name="Cod_Zip" ColumnName="Cod_Zip" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zip_Calle">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Zip_Calle">
+        <MappingFragment StoreEntitySet="Zip_Calle">
+          <ScalarProperty Name="Cod_ZipCode" ColumnName="Cod_ZipCode" />
+          <ScalarProperty Name="Cod_Calle" ColumnName="Cod_Calle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zip_Promocion">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Zip_Promocion">
+        <MappingFragment StoreEntitySet="Zip_Promocion">
+          <ScalarProperty Name="Cod_Promocion" ColumnName="Cod_Promocion" />
+          <ScalarProperty Name="Cod_ZipCode" ColumnName="Cod_ZipCode" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zona">
+      <EntityTypeMapping TypeName="SqlGerenteModel.Zona">
+        <MappingFragment StoreEntitySet="Zona">
+          <ScalarProperty Name="Cod_Zona" ColumnName="Cod_Zona" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Articulos_GruposArt" TypeName="SqlGerenteModel.FK_Articulos_GruposArt" StoreEntitySet="Articulos">
+      <EndProperty Name="GruposArt">
+        <ScalarProperty Name="Cod_GrupoArt" ColumnName="Cod_GrupoArt" />
+      </EndProperty>
+      <EndProperty Name="Articulos">
+        <ScalarProperty Name="Cod_Articulo" ColumnName="Cod_Articulo" />
+      </EndProperty>
+      <Condition ColumnName="Cod_GrupoArt" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Cadena_Pais" TypeName="SqlGerenteModel.FK_Cadena_Pais" StoreEntitySet="Cadena">
+      <EndProperty Name="Pais">
+        <ScalarProperty Name="Cod_Pais" ColumnName="Cod_Pais" />
+      </EndProperty>
+      <EndProperty Name="Cadena">
+        <ScalarProperty Name="Cod_Cadena" ColumnName="Cod_Cadena" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Pais" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_clave_contingencia_Restaurante" TypeName="SqlGerenteModel.FK_clave_contingencia_Restaurante" StoreEntitySet="clave_contingencia">
+      <EndProperty Name="Restaurante">
+        <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+      </EndProperty>
+      <EndProperty Name="clave_contingencia">
+        <ScalarProperty Name="Clave_Contingencia1" ColumnName="Clave_Contingencia" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Restaurante" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Factura_Domicilio_Cliente_Domicilio" TypeName="SqlGerenteModel.FK_Factura_Domicilio_Cliente_Domicilio" StoreEntitySet="Factura_Domicilio">
+      <EndProperty Name="Cliente_Domicilio">
+        <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+      </EndProperty>
+      <EndProperty Name="Factura_Domicilio">
+        <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Cliente_Domicilio" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Nota_Credito_Cliente_Domicilio" TypeName="SqlGerenteModel.FK_Nota_Credito_Cliente_Domicilio" StoreEntitySet="Nota_Credito">
+      <EndProperty Name="Cliente_Domicilio">
+        <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+      </EndProperty>
+      <EndProperty Name="Nota_Credito">
+        <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Cliente_Domicilio" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Telefono_Cliente_Cliente_Domicilio" TypeName="SqlGerenteModel.FK_Telefono_Cliente_Cliente_Domicilio" StoreEntitySet="Telefono_Cliente">
+      <EndProperty Name="Cliente_Domicilio">
+        <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+      </EndProperty>
+      <EndProperty Name="Telefono_Cliente">
+        <ScalarProperty Name="Cod_Cliente_Domicilio" ColumnName="Cod_Cliente_Domicilio" />
+        <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Configuracion_Domicilio_Tipo_Facturacion" TypeName="SqlGerenteModel.FK_Configuracion_Domicilio_Tipo_Facturacion" StoreEntitySet="Configuracion_Domicilio">
+      <EndProperty Name="Tipo_Facturacion">
+        <ScalarProperty Name="Cod_Tipo_Facturacion" ColumnName="Tipo_Facturacion" />
+      </EndProperty>
+      <EndProperty Name="Configuracion_Domicilio">
+        <ScalarProperty Name="Cod_Configuracion" ColumnName="Cod_Configuracion" />
+      </EndProperty>
+      <Condition ColumnName="Tipo_Facturacion" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CONVERT_REFERENCE_UNIDADES" TypeName="SqlGerenteModel.FK_CONVERT_REFERENCE_UNIDADES" StoreEntitySet="Conversion">
+      <EndProperty Name="Unidades">
+        <ScalarProperty Name="Cod_Unidad" ColumnName="Desde" />
+      </EndProperty>
+      <EndProperty Name="Conversion">
+        <ScalarProperty Name="Cod_Conversion" ColumnName="Cod_Conversion" />
+      </EndProperty>
+      <Condition ColumnName="Desde" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Convert_Unidades" TypeName="SqlGerenteModel.FK_Convert_Unidades" StoreEntitySet="Conversion">
+      <EndProperty Name="Unidades">
+        <ScalarProperty Name="Cod_Unidad" ColumnName="Hasta" />
+      </EndProperty>
+      <EndProperty Name="Conversion">
+        <ScalarProperty Name="Cod_Conversion" ColumnName="Cod_Conversion" />
+      </EndProperty>
+      <Condition ColumnName="Hasta" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Detalle_Factura_Plu_Promocion" TypeName="SqlGerenteModel.FK_Detalle_Factura_Plu_Promocion" StoreEntitySet="Detalle_Factura">
+      <EndProperty Name="Plu_Promocion">
+        <ScalarProperty Name="Cod_Plu_Promocion" ColumnName="Cod_Plu_Promocion" />
+      </EndProperty>
+      <EndProperty Name="Detalle_Factura">
+        <ScalarProperty Name="Cod_Detalle_Factura" ColumnName="Cod_Detalle_Factura" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Plu_Promocion" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Detalle_Nota_Credito_Nota_Credito" TypeName="SqlGerenteModel.FK_Detalle_Nota_Credito_Nota_Credito" StoreEntitySet="Detalle_Nota_Credito">
+      <EndProperty Name="Nota_Credito">
+        <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+      </EndProperty>
+      <EndProperty Name="Detalle_Nota_Credito">
+        <ScalarProperty Name="Cod_Detalle_Nota_Credito" ColumnName="Cod_Detalle_Nota_Credito" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Nota_Credito" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Detalle_Nota_Credito_Plu_Promocion" TypeName="SqlGerenteModel.FK_Detalle_Nota_Credito_Plu_Promocion" StoreEntitySet="Detalle_Nota_Credito">
+      <EndProperty Name="Plu_Promocion">
+        <ScalarProperty Name="Cod_Plu_Promocion" ColumnName="Cod_Plu_Promocion" />
+      </EndProperty>
+      <EndProperty Name="Detalle_Nota_Credito">
+        <ScalarProperty Name="Cod_Detalle_Nota_Credito" ColumnName="Cod_Detalle_Nota_Credito" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Plu_Promocion" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DinDomicilio_Motorolos" TypeName="SqlGerenteModel.FK_DinDomicilio_Motorolos" StoreEntitySet="DinDomicilio">
+      <EndProperty Name="Motorolos">
+        <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+      </EndProperty>
+      <EndProperty Name="DinDomicilio">
+        <ScalarProperty Name="Cod_DinDomicilio" ColumnName="Cod_DinDomicilio" />
+        <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Factura_Domicilio_Motorolos" TypeName="SqlGerenteModel.FK_Factura_Domicilio_Motorolos" StoreEntitySet="Factura_Domicilio">
+      <EndProperty Name="Motorolos">
+        <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+      </EndProperty>
+      <EndProperty Name="Factura_Domicilio">
+        <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Motorolo" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Factura_Domicilio_Periodo" TypeName="SqlGerenteModel.FK_Factura_Domicilio_Periodo" StoreEntitySet="Factura_Domicilio">
+      <EndProperty Name="Periodo">
+        <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+      </EndProperty>
+      <EndProperty Name="Factura_Domicilio">
+        <ScalarProperty Name="Cod_Factura" ColumnName="Cod_Factura" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Periodo" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Factura_FormasPago" TypeName="SqlGerenteModel.FK_Factura_FormasPago" StoreEntitySet="Factura_FormasPago">
+      <EndProperty Name="FormasPago">
+        <ScalarProperty Name="Cod_FormaPago" ColumnName="Cod_FormaPago" />
+      </EndProperty>
+      <EndProperty Name="Factura_FormasPago">
+        <ScalarProperty Name="Cod_FFormasPago" ColumnName="Cod_FFormasPago" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FormasPago_TipoFormaPago" TypeName="SqlGerenteModel.FK_FormasPago_TipoFormaPago" StoreEntitySet="FormasPago">
+      <EndProperty Name="TipoFormaPago">
+        <ScalarProperty Name="Cod_TipoF" ColumnName="Cod_TipoF" />
+      </EndProperty>
+      <EndProperty Name="FormasPago">
+        <ScalarProperty Name="Cod_FormaPago" ColumnName="Cod_FormaPago" />
+      </EndProperty>
+      <Condition ColumnName="Cod_TipoF" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Telefonos_Inmueble" TypeName="SqlGerenteModel.FK_Telefonos_Inmueble" StoreEntitySet="Telefonos">
+      <EndProperty Name="Inmueble">
+        <ScalarProperty Name="Cod_Inmueble" ColumnName="Cod_Inmueble" />
+      </EndProperty>
+      <EndProperty Name="Telefonos">
+        <ScalarProperty Name="Cod_Telefono" ColumnName="Cod_Telefono" />
+        <ScalarProperty Name="Cod_Ciudad" ColumnName="Cod_Ciudad" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Inmueble" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Motorolos_Restaurante" TypeName="SqlGerenteModel.FK_Motorolos_Restaurante" StoreEntitySet="Motorolos">
+      <EndProperty Name="Restaurante">
+        <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+      </EndProperty>
+      <EndProperty Name="Motorolos">
+        <ScalarProperty Name="Cod_Motorolo" ColumnName="Cod_Motorolo" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Restaurante" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_NivelesPyG_NivelesPyG1" TypeName="SqlGerenteModel.FK_NivelesPyG_NivelesPyG1" StoreEntitySet="NivelesPyG">
+      <EndProperty Name="NivelesPyG">
+        <ScalarProperty Name="Cod_Grupo" ColumnName="Padre" />
+      </EndProperty>
+      <EndProperty Name="NivelesPyG1">
+        <ScalarProperty Name="Cod_Grupo" ColumnName="Cod_Grupo" />
+      </EndProperty>
+      <Condition ColumnName="Padre" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RUBROS_REFERENCE_NIVELESP" TypeName="SqlGerenteModel.FK_RUBROS_REFERENCE_NIVELESP" StoreEntitySet="Rubros">
+      <EndProperty Name="NivelesPyG">
+        <ScalarProperty Name="Cod_Grupo" ColumnName="Cod_Grupo" />
+      </EndProperty>
+      <EndProperty Name="Rubros">
+        <ScalarProperty Name="Cod_Rubros" ColumnName="Cod_Rubros" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Grupo" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Nota_Credito_Domicilio_Periodo" TypeName="SqlGerenteModel.FK_Nota_Credito_Domicilio_Periodo" StoreEntitySet="Nota_Credito">
+      <EndProperty Name="Periodo">
+        <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+      </EndProperty>
+      <EndProperty Name="Nota_Credito">
+        <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Periodo" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Nota_Credito_Tipo_Comprobante" TypeName="SqlGerenteModel.FK_Nota_Credito_Tipo_Comprobante" StoreEntitySet="Nota_Credito">
+      <EndProperty Name="Tipo_Comprobante">
+        <ScalarProperty Name="Cod_Tipo_Comprobante" ColumnName="Cod_Tipo_Comprobante" />
+      </EndProperty>
+      <EndProperty Name="Nota_Credito">
+        <ScalarProperty Name="Cod_Nota_Credito" ColumnName="Cod_Nota_Credito" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Tipo_Comprobante" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_REGION_REFERENCE_PAIS" TypeName="SqlGerenteModel.FK_REGION_REFERENCE_PAIS" StoreEntitySet="Region">
+      <EndProperty Name="Pais">
+        <ScalarProperty Name="Cod_Pais" ColumnName="Cod_Pais" />
+      </EndProperty>
+      <EndProperty Name="Region">
+        <ScalarProperty Name="Cod_Region" ColumnName="Cod_Region" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Pais" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Periodo_Restaurante" TypeName="SqlGerenteModel.FK_Periodo_Restaurante" StoreEntitySet="Periodo">
+      <EndProperty Name="Restaurante">
+        <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+      </EndProperty>
+      <EndProperty Name="Periodo">
+        <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Restaurante" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Referencia_Promocion_Promociones" TypeName="SqlGerenteModel.FK_Referencia_Promocion_Promociones" StoreEntitySet="Plu_Promocion">
+      <EndProperty Name="Promocion">
+        <ScalarProperty Name="Cod_Promocion" ColumnName="Cod_Promocion" />
+      </EndProperty>
+      <EndProperty Name="Plu_Promocion">
+        <ScalarProperty Name="Cod_Plu_Promocion" ColumnName="Cod_Plu_Promocion" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SECUENCI_RLSH_87_RESTAURA" TypeName="SqlGerenteModel.FK_SECUENCI_RLSH_87_RESTAURA" StoreEntitySet="Secuencia">
+      <EndProperty Name="Restaurante">
+        <ScalarProperty Name="Cod_Restaurante" ColumnName="Cod_Restaurante" />
+      </EndProperty>
+      <EndProperty Name="Secuencia">
+        <ScalarProperty Name="Cod_Secuencia" ColumnName="Cod_Secuencia" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Restaurante" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Secuencia_TipoMov1" TypeName="SqlGerenteModel.FK_Secuencia_TipoMov1" StoreEntitySet="Secuencia">
+      <EndProperty Name="TipoMov">
+        <ScalarProperty Name="Cod_TipMovInv" ColumnName="Cod_Movimiento" />
+      </EndProperty>
+      <EndProperty Name="Secuencia">
+        <ScalarProperty Name="Cod_Secuencia" ColumnName="Cod_Secuencia" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Movimiento" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Secuencia_Domicilio_Tipo_Accion_Domi" TypeName="SqlGerenteModel.FK_Secuencia_Domicilio_Tipo_Accion_Domi" StoreEntitySet="Secuencia_Domicilio">
+      <EndProperty Name="Tipo_Accion_Domi">
+        <ScalarProperty Name="Cod_Accion_Domi" ColumnName="Cod_Accion_Domi" />
+      </EndProperty>
+      <EndProperty Name="Secuencia_Domicilio">
+        <ScalarProperty Name="Cod_Domi_Secuencia" ColumnName="Cod_Domi_Secuencia" />
+      </EndProperty>
+      <Condition ColumnName="Cod_Accion_Domi" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

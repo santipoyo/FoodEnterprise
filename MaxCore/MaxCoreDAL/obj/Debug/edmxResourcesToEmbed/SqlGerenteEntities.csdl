@@ -1,0 +1,1537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SqlGerenteModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="SqlGerenteEntities">
+    <EntitySet Name="Acceso" EntityType="SqlGerenteModel.Acceso" />
+    <EntitySet Name="Area" EntityType="SqlGerenteModel.Area" />
+    <EntitySet Name="Articulos" EntityType="SqlGerenteModel.Articulos" />
+    <EntitySet Name="Cadena" EntityType="SqlGerenteModel.Cadena" />
+    <EntitySet Name="Calle" EntityType="SqlGerenteModel.Calle" />
+    <EntitySet Name="Calle_Restaurante" EntityType="SqlGerenteModel.Calle_Restaurante" />
+    <EntitySet Name="Calles_Back" EntityType="SqlGerenteModel.Calles_Back" />
+    <EntitySet Name="Categoria" EntityType="SqlGerenteModel.Categoria" />
+    <EntitySet Name="Ciudad" EntityType="SqlGerenteModel.Ciudad" />
+    <EntitySet Name="Clasificacion" EntityType="SqlGerenteModel.Clasificacion" />
+    <EntitySet Name="clave_contingencia" EntityType="SqlGerenteModel.clave_contingencia" />
+    <EntitySet Name="Cliente_Domicilio" EntityType="SqlGerenteModel.Cliente_Domicilio" />
+    <EntitySet Name="ClientesAx" EntityType="SqlGerenteModel.ClientesAx" />
+    <EntitySet Name="Compania" EntityType="SqlGerenteModel.Compania" />
+    <EntitySet Name="Config_RecetaSugerencia" EntityType="SqlGerenteModel.Config_RecetaSugerencia" />
+    <EntitySet Name="Configuracion_Domicilio" EntityType="SqlGerenteModel.Configuracion_Domicilio" />
+    <EntitySet Name="Conversion" EntityType="SqlGerenteModel.Conversion" />
+    <EntitySet Name="DeptoPlus" EntityType="SqlGerenteModel.DeptoPlus" />
+    <EntitySet Name="Descuentos_Cadena" EntityType="SqlGerenteModel.Descuentos_Cadena" />
+    <EntitySet Name="Detalle_Factura" EntityType="SqlGerenteModel.Detalle_Factura" />
+    <EntitySet Name="Detalle_Nota_Credito" EntityType="SqlGerenteModel.Detalle_Nota_Credito" />
+    <EntitySet Name="DinDomicilio" EntityType="SqlGerenteModel.DinDomicilio" />
+    <EntitySet Name="Domicilio_Cierre" EntityType="SqlGerenteModel.Domicilio_Cierre" />
+    <EntitySet Name="Domicilio_Mix" EntityType="SqlGerenteModel.Domicilio_Mix" />
+    <EntitySet Name="Empresa" EntityType="SqlGerenteModel.Empresa" />
+    <EntitySet Name="Empresas" EntityType="SqlGerenteModel.Empresas" />
+    <EntitySet Name="EnvioCorreos" EntityType="SqlGerenteModel.EnvioCorreos" />
+    <EntitySet Name="Estados_Domicilio" EntityType="SqlGerenteModel.Estados_Domicilio" />
+    <EntitySet Name="Factura_Anulacion" EntityType="SqlGerenteModel.Factura_Anulacion" />
+    <EntitySet Name="Factura_Domicilio" EntityType="SqlGerenteModel.Factura_Domicilio" />
+    <EntitySet Name="Factura_FormasPago" EntityType="SqlGerenteModel.Factura_FormasPago" />
+    <EntitySet Name="FormasPago" EntityType="SqlGerenteModel.FormasPago" />
+    <EntitySet Name="GruposArt" EntityType="SqlGerenteModel.GruposArt" />
+    <EntitySet Name="Impuestos" EntityType="SqlGerenteModel.Impuestos" />
+    <EntitySet Name="Inmueble" EntityType="SqlGerenteModel.Inmueble" />
+    <EntitySet Name="Log_Facturacion_Electronica" EntityType="SqlGerenteModel.Log_Facturacion_Electronica" />
+    <EntitySet Name="Modificador" EntityType="SqlGerenteModel.Modificador" />
+    <EntitySet Name="Motorolos" EntityType="SqlGerenteModel.Motorolos" />
+    <EntitySet Name="NivelesPyG" EntityType="SqlGerenteModel.NivelesPyG" />
+    <EntitySet Name="Nota_Credito" EntityType="SqlGerenteModel.Nota_Credito" />
+    <EntitySet Name="Pais" EntityType="SqlGerenteModel.Pais" />
+    <EntitySet Name="Pantalla" EntityType="SqlGerenteModel.Pantalla" />
+    <EntitySet Name="Paquete" EntityType="SqlGerenteModel.Paquete" />
+    <EntitySet Name="Perfil" EntityType="SqlGerenteModel.Perfil" />
+    <EntitySet Name="Periodo" EntityType="SqlGerenteModel.Periodo" />
+    <EntitySet Name="PermisosPerfil" EntityType="SqlGerenteModel.PermisosPerfil" />
+    <EntitySet Name="Personal_Domicilio" EntityType="SqlGerenteModel.Personal_Domicilio" />
+    <EntitySet Name="Plu_Promocion" EntityType="SqlGerenteModel.Plu_Promocion" />
+    <EntitySet Name="Plu_Sujeto" EntityType="SqlGerenteModel.Plu_Sujeto" />
+    <EntitySet Name="Plus" EntityType="SqlGerenteModel.Plus" />
+    <EntitySet Name="Precio_plu" EntityType="SqlGerenteModel.Precio_plu" />
+    <EntitySet Name="Promocion" EntityType="SqlGerenteModel.Promocion" />
+    <EntitySet Name="Proveedor" EntityType="SqlGerenteModel.Proveedor" />
+    <EntitySet Name="Provincia" EntityType="SqlGerenteModel.Provincia" />
+    <EntitySet Name="Recetas" EntityType="SqlGerenteModel.Recetas" />
+    <EntitySet Name="RecetaSugerencia" EntityType="SqlGerenteModel.RecetaSugerencia" />
+    <EntitySet Name="Region" EntityType="SqlGerenteModel.Region" />
+    <EntitySet Name="Respuesta_Autorizacion_Comprobante" EntityType="SqlGerenteModel.Respuesta_Autorizacion_Comprobante" />
+    <EntitySet Name="Respuesta_Recepcion_Comprobante" EntityType="SqlGerenteModel.Respuesta_Recepcion_Comprobante" />
+    <EntitySet Name="Restaurante" EntityType="SqlGerenteModel.Restaurante" />
+    <EntitySet Name="Rubros" EntityType="SqlGerenteModel.Rubros" />
+    <EntitySet Name="Secuencia" EntityType="SqlGerenteModel.Secuencia" />
+    <EntitySet Name="Secuencia_Domicilio" EntityType="SqlGerenteModel.Secuencia_Domicilio" />
+    <EntitySet Name="SubRecet" EntityType="SqlGerenteModel.SubRecet" />
+    <EntitySet Name="SubRecetaTrans" EntityType="SqlGerenteModel.SubRecetaTrans" />
+    <EntitySet Name="sysdiagrams" EntityType="SqlGerenteModel.sysdiagrams" />
+    <EntitySet Name="Telefono_Cliente" EntityType="SqlGerenteModel.Telefono_Cliente" />
+    <EntitySet Name="Telefonos" EntityType="SqlGerenteModel.Telefonos" />
+    <EntitySet Name="Tipo_Accion_Domi" EntityType="SqlGerenteModel.Tipo_Accion_Domi" />
+    <EntitySet Name="Tipo_Ambiente" EntityType="SqlGerenteModel.Tipo_Ambiente" />
+    <EntitySet Name="Tipo_Comprobante" EntityType="SqlGerenteModel.Tipo_Comprobante" />
+    <EntitySet Name="Tipo_Documento" EntityType="SqlGerenteModel.Tipo_Documento" />
+    <EntitySet Name="Tipo_Emision" EntityType="SqlGerenteModel.Tipo_Emision" />
+    <EntitySet Name="Tipo_Facturacion" EntityType="SqlGerenteModel.Tipo_Facturacion" />
+    <EntitySet Name="Tipo_Inmueble" EntityType="SqlGerenteModel.Tipo_Inmueble" />
+    <EntitySet Name="Tipo_Modificador" EntityType="SqlGerenteModel.Tipo_Modificador" />
+    <EntitySet Name="Tipo_Modificador_Plu" EntityType="SqlGerenteModel.Tipo_Modificador_Plu" />
+    <EntitySet Name="Tipo_Promocion" EntityType="SqlGerenteModel.Tipo_Promocion" />
+    <EntitySet Name="TipoCCC" EntityType="SqlGerenteModel.TipoCCC" />
+    <EntitySet Name="TipoFormaPago" EntityType="SqlGerenteModel.TipoFormaPago" />
+    <EntitySet Name="TipoMov" EntityType="SqlGerenteModel.TipoMov" />
+    <EntitySet Name="TipoRestaurante" EntityType="SqlGerenteModel.TipoRestaurante" />
+    <EntitySet Name="TiposCuenta" EntityType="SqlGerenteModel.TiposCuenta" />
+    <EntitySet Name="Ubicacion" EntityType="SqlGerenteModel.Ubicacion" />
+    <EntitySet Name="UbicacionCadena" EntityType="SqlGerenteModel.UbicacionCadena" />
+    <EntitySet Name="Unidades" EntityType="SqlGerenteModel.Unidades" />
+    <EntitySet Name="UserRestaurante" EntityType="SqlGerenteModel.UserRestaurante" />
+    <EntitySet Name="Users" EntityType="SqlGerenteModel.Users" />
+    <EntitySet Name="Zip" EntityType="SqlGerenteModel.Zip" />
+    <EntitySet Name="Zip_Calle" EntityType="SqlGerenteModel.Zip_Calle" />
+    <EntitySet Name="Zip_Promocion" EntityType="SqlGerenteModel.Zip_Promocion" />
+    <EntitySet Name="Zona" EntityType="SqlGerenteModel.Zona" />
+    <AssociationSet Name="FK_Articulos_GruposArt" Association="SqlGerenteModel.FK_Articulos_GruposArt">
+      <End Role="GruposArt" EntitySet="GruposArt" />
+      <End Role="Articulos" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cadena_Pais" Association="SqlGerenteModel.FK_Cadena_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Cadena" EntitySet="Cadena" />
+    </AssociationSet>
+    <AssociationSet Name="FK_clave_contingencia_Restaurante" Association="SqlGerenteModel.FK_clave_contingencia_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="clave_contingencia" EntitySet="clave_contingencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Cliente_Domicilio" Association="SqlGerenteModel.FK_Factura_Domicilio_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Cliente_Domicilio" Association="SqlGerenteModel.FK_Nota_Credito_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefono_Cliente_Cliente_Domicilio" Association="SqlGerenteModel.FK_Telefono_Cliente_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Telefono_Cliente" EntitySet="Telefono_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Configuracion_Domicilio_Tipo_Facturacion" Association="SqlGerenteModel.FK_Configuracion_Domicilio_Tipo_Facturacion">
+      <End Role="Tipo_Facturacion" EntitySet="Tipo_Facturacion" />
+      <End Role="Configuracion_Domicilio" EntitySet="Configuracion_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONVERT_REFERENCE_UNIDADES" Association="SqlGerenteModel.FK_CONVERT_REFERENCE_UNIDADES">
+      <End Role="Unidades" EntitySet="Unidades" />
+      <End Role="Conversion" EntitySet="Conversion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Convert_Unidades" Association="SqlGerenteModel.FK_Convert_Unidades">
+      <End Role="Unidades" EntitySet="Unidades" />
+      <End Role="Conversion" EntitySet="Conversion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Factura_Plu_Promocion" Association="SqlGerenteModel.FK_Detalle_Factura_Plu_Promocion">
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+      <End Role="Detalle_Factura" EntitySet="Detalle_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Nota_Credito_Nota_Credito" Association="SqlGerenteModel.FK_Detalle_Nota_Credito_Nota_Credito">
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+      <End Role="Detalle_Nota_Credito" EntitySet="Detalle_Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Nota_Credito_Plu_Promocion" Association="SqlGerenteModel.FK_Detalle_Nota_Credito_Plu_Promocion">
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+      <End Role="Detalle_Nota_Credito" EntitySet="Detalle_Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DinDomicilio_Motorolos" Association="SqlGerenteModel.FK_DinDomicilio_Motorolos">
+      <End Role="Motorolos" EntitySet="Motorolos" />
+      <End Role="DinDomicilio" EntitySet="DinDomicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Motorolos" Association="SqlGerenteModel.FK_Factura_Domicilio_Motorolos">
+      <End Role="Motorolos" EntitySet="Motorolos" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Periodo" Association="SqlGerenteModel.FK_Factura_Domicilio_Periodo">
+      <End Role="Periodo" EntitySet="Periodo" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_FormasPago" Association="SqlGerenteModel.FK_Factura_FormasPago">
+      <End Role="FormasPago" EntitySet="FormasPago" />
+      <End Role="Factura_FormasPago" EntitySet="Factura_FormasPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormasPago_TipoFormaPago" Association="SqlGerenteModel.FK_FormasPago_TipoFormaPago">
+      <End Role="TipoFormaPago" EntitySet="TipoFormaPago" />
+      <End Role="FormasPago" EntitySet="FormasPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefonos_Inmueble" Association="SqlGerenteModel.FK_Telefonos_Inmueble">
+      <End Role="Inmueble" EntitySet="Inmueble" />
+      <End Role="Telefonos" EntitySet="Telefonos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Motorolos_Restaurante" Association="SqlGerenteModel.FK_Motorolos_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Motorolos" EntitySet="Motorolos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NivelesPyG_NivelesPyG1" Association="SqlGerenteModel.FK_NivelesPyG_NivelesPyG1">
+      <End Role="NivelesPyG" EntitySet="NivelesPyG" />
+      <End Role="NivelesPyG1" EntitySet="NivelesPyG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RUBROS_REFERENCE_NIVELESP" Association="SqlGerenteModel.FK_RUBROS_REFERENCE_NIVELESP">
+      <End Role="NivelesPyG" EntitySet="NivelesPyG" />
+      <End Role="Rubros" EntitySet="Rubros" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Domicilio_Periodo" Association="SqlGerenteModel.FK_Nota_Credito_Domicilio_Periodo">
+      <End Role="Periodo" EntitySet="Periodo" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Tipo_Comprobante" Association="SqlGerenteModel.FK_Nota_Credito_Tipo_Comprobante">
+      <End Role="Tipo_Comprobante" EntitySet="Tipo_Comprobante" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGION_REFERENCE_PAIS" Association="SqlGerenteModel.FK_REGION_REFERENCE_PAIS">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Region" EntitySet="Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periodo_Restaurante" Association="SqlGerenteModel.FK_Periodo_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Periodo" EntitySet="Periodo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Referencia_Promocion_Promociones" Association="SqlGerenteModel.FK_Referencia_Promocion_Promociones">
+      <End Role="Promocion" EntitySet="Promocion" />
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SECUENCI_RLSH_87_RESTAURA" Association="SqlGerenteModel.FK_SECUENCI_RLSH_87_RESTAURA">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Secuencia" EntitySet="Secuencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Secuencia_TipoMov1" Association="SqlGerenteModel.FK_Secuencia_TipoMov1">
+      <End Role="TipoMov" EntitySet="TipoMov" />
+      <End Role="Secuencia" EntitySet="Secuencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Secuencia_Domicilio_Tipo_Accion_Domi" Association="SqlGerenteModel.FK_Secuencia_Domicilio_Tipo_Accion_Domi">
+      <End Role="Tipo_Accion_Domi" EntitySet="Tipo_Accion_Domi" />
+      <End Role="Secuencia_Domicilio" EntitySet="Secuencia_Domicilio" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="Cod_Acceso" />
+    </Key>
+    <Property Name="Cod_Acceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Nombre" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="Cod_Area" />
+    </Key>
+    <Property Name="Cod_Area" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Articulos">
+    <Key>
+      <PropertyRef Name="Cod_Articulo" />
+    </Key>
+    <Property Name="Cod_Articulo" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Unidad_Compra" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Unidad_Inventario" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Unidad_Receta" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="CostoCompra_UIO" Type="Double" />
+    <Property Name="CostoCompra_GYE" Type="Double" />
+    <Property Name="CostoCompra_BOD" Type="Double" />
+    <Property Name="CostoInventario_UIO" Type="Double" />
+    <Property Name="CostoInventario_GYE" Type="Double" />
+    <Property Name="CostoInventario_BOD" Type="Double" />
+    <Property Name="CostoReceta_UIO" Type="Double" />
+    <Property Name="CostoReceta_GYE" Type="Double" />
+    <Property Name="CostoReceta_BOD" Type="Double" />
+    <Property Name="GrupoDespacho" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ImpuestoV" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Impuesto" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="ABR_Bajar" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Convert_INV" Type="Double" />
+    <Property Name="Convert_REC" Type="Double" />
+    <NavigationProperty Name="GruposArt" Relationship="SqlGerenteModel.FK_Articulos_GruposArt" FromRole="Articulos" ToRole="GruposArt" />
+  </EntityType>
+  <EntityType Name="Cadena">
+    <Key>
+      <PropertyRef Name="Cod_Cadena" />
+    </Key>
+    <Property Name="Cod_Cadena" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cliente" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Compania" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="ABR" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Letra_Cadena" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="Dimension" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Dimension_Planta" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Porcen_Canjes" Type="Double" />
+    <Property Name="Tipo_Regalia" Type="Int32" />
+    <Property Name="Monedas_Tevcol" Type="Int32" />
+    <Property Name="Tipo_Impuesto" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Logo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DestinoAX" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Plus_Domicilio" Type="Int32" />
+    <Property Name="Tolerancia" Type="Int32" />
+    <Property Name="Stock_Inventario" Type="Boolean" />
+    <Property Name="Inicial_Cadena" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DepositoPixel" Type="Int32" />
+    <Property Name="Nombre_Comercial" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_empresa" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Pais" Relationship="SqlGerenteModel.FK_Cadena_Pais" FromRole="Cadena" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Calle">
+    <Key>
+      <PropertyRef Name="Cod_Calle" />
+    </Key>
+    <Property Name="Cod_Calle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Ciudad" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Calle_Restaurante">
+    <Key>
+      <PropertyRef Name="Cod_Calle" />
+      <PropertyRef Name="Cod_Area" />
+    </Key>
+    <Property Name="Cod_Calle" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Area" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Calles_Back">
+    <Key>
+      <PropertyRef Name="Cod_Calle_Back" />
+    </Key>
+    <Property Name="Cod_Calle_Back" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="Cod_Categoria" />
+    </Key>
+    <Property Name="Cod_Categoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="ABR" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="Cod_Ciudad" />
+    </Key>
+    <Property Name="Cod_Ciudad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Provincia" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Prefijo" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Clasificacion">
+    <Key>
+      <PropertyRef Name="Cod_Clasificacion" />
+    </Key>
+    <Property Name="Cod_Clasificacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="clave_contingencia">
+    <Key>
+      <PropertyRef Name="Clave_Contingencia1" />
+    </Key>
+    <Property Name="Clave_Contingencia1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Fecha_Carga" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Uso" Type="DateTime" Precision="3" />
+    <Property Name="Cod_Movimiento" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Restaurante" Relationship="SqlGerenteModel.FK_clave_contingencia_Restaurante" FromRole="clave_contingencia" ToRole="Restaurante" />
+  </EntityType>
+  <EntityType Name="Cliente_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Cliente_Domicilio" />
+    </Key>
+    <Property Name="Cod_Cliente_Domicilio" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Ruc_Cedula" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Ext" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Tipo_Documento" Type="Int32" />
+    <NavigationProperty Name="Factura_Domicilio" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Cliente_Domicilio" FromRole="Cliente_Domicilio" ToRole="Factura_Domicilio" />
+    <NavigationProperty Name="Nota_Credito" Relationship="SqlGerenteModel.FK_Nota_Credito_Cliente_Domicilio" FromRole="Cliente_Domicilio" ToRole="Nota_Credito" />
+    <NavigationProperty Name="Telefono_Cliente" Relationship="SqlGerenteModel.FK_Telefono_Cliente_Cliente_Domicilio" FromRole="Cliente_Domicilio" ToRole="Telefono_Cliente" />
+  </EntityType>
+  <EntityType Name="ClientesAx">
+    <Key>
+      <PropertyRef Name="Cod_Cliente" />
+    </Key>
+    <Property Name="Cod_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoAX" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="RUC" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="Nombre" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Pais" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Grupo" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="ModoPago" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="TipoCliente" Type="Int32" />
+    <Property Name="NombreInterfaz" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Compania">
+    <Key>
+      <PropertyRef Name="Cod_Compania" />
+    </Key>
+    <Property Name="Cod_Compania" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Config_RecetaSugerencia">
+    <Key>
+      <PropertyRef Name="Cod_Plu" />
+    </Key>
+    <Property Name="Cod_Plu" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Configuracion_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Configuracion" />
+    </Key>
+    <Property Name="Cod_Configuracion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Conex_BD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Menu" Type="Int32" />
+    <Property Name="Orden_Seleccion" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="Recargo" Type="Int32" />
+    <Property Name="Impresion" Type="Int32" />
+    <Property Name="Tiempo_Espera" Type="Int32" />
+    <Property Name="Archivo_Impresion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Numero_Impresiones" Type="Int32" />
+    <Property Name="Call_Center" Type="Int32" />
+    <Property Name="Num_Lineas" Type="Int32" />
+    <Property Name="Num_Comandas" Type="Int32" />
+    <Property Name="Tiempo_Retorno" Type="Int32" />
+    <Property Name="Seguridad" Type="Int32" />
+    <Property Name="Transferencia" Type="Int32" />
+    <Property Name="Tiempo_Entrega" Type="Int32" />
+    <Property Name="Tiempo_Recepcion" Type="Int32" />
+    <Property Name="Credito" Type="Int32" />
+    <Property Name="Tiempo_RRetorno" Type="Int32" />
+    <Property Name="Cod_Local" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Tipo_Facturacion" Relationship="SqlGerenteModel.FK_Configuracion_Domicilio_Tipo_Facturacion" FromRole="Configuracion_Domicilio" ToRole="Tipo_Facturacion" />
+  </EntityType>
+  <EntityType Name="Conversion">
+    <Key>
+      <PropertyRef Name="Cod_Conversion" />
+    </Key>
+    <Property Name="Cod_Conversion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Factor_Conversion" Type="Double" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Unidades" Relationship="SqlGerenteModel.FK_CONVERT_REFERENCE_UNIDADES" FromRole="Conversion" ToRole="Unidades" />
+    <NavigationProperty Name="Unidades1" Relationship="SqlGerenteModel.FK_Convert_Unidades" FromRole="Conversion" ToRole="Unidades" />
+  </EntityType>
+  <EntityType Name="DeptoPlus">
+    <Key>
+      <PropertyRef Name="Cod_DeptoPlu" />
+    </Key>
+    <Property Name="Cod_DeptoPlu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Depto" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Descuentos_Cadena">
+    <Key>
+      <PropertyRef Name="Cod_Descuento_Cadena" />
+    </Key>
+    <Property Name="Cod_Descuento_Cadena" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Maximo" Type="Int32" />
+    <Property Name="Minimo" Type="Int32" />
+    <Property Name="Intervalo" Type="Int32" />
+    <Property Name="Tipo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Detalle_Factura">
+    <Key>
+      <PropertyRef Name="Cod_Detalle_Factura" />
+    </Key>
+    <Property Name="Cod_Detalle_Factura" Type="Guid" Nullable="false" />
+    <Property Name="Cod_Factura" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Precio" Type="Double" />
+    <Property Name="Iva" Type="Double" />
+    <Property Name="Costo" Type="Double" />
+    <Property Name="Orden" Type="Int32" />
+    <Property Name="Descuento" Type="Double" />
+    <Property Name="Descuento_con_Impuesto" Type="Double" />
+    <NavigationProperty Name="Plu_Promocion" Relationship="SqlGerenteModel.FK_Detalle_Factura_Plu_Promocion" FromRole="Detalle_Factura" ToRole="Plu_Promocion" />
+  </EntityType>
+  <EntityType Name="Detalle_Nota_Credito">
+    <Key>
+      <PropertyRef Name="Cod_Detalle_Nota_Credito" />
+    </Key>
+    <Property Name="Cod_Detalle_Nota_Credito" Type="Guid" Nullable="false" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Precio" Type="Double" />
+    <Property Name="Iva" Type="Double" />
+    <Property Name="Costo" Type="Double" />
+    <Property Name="Orden" Type="Double" />
+    <Property Name="Descuento" Type="Double" />
+    <Property Name="Descuento_con_Impuesto" Type="Double" />
+    <NavigationProperty Name="Nota_Credito" Relationship="SqlGerenteModel.FK_Detalle_Nota_Credito_Nota_Credito" FromRole="Detalle_Nota_Credito" ToRole="Nota_Credito" />
+    <NavigationProperty Name="Plu_Promocion" Relationship="SqlGerenteModel.FK_Detalle_Nota_Credito_Plu_Promocion" FromRole="Detalle_Nota_Credito" ToRole="Plu_Promocion" />
+  </EntityType>
+  <EntityType Name="DinDomicilio">
+    <Key>
+      <PropertyRef Name="Cod_DinDomicilio" />
+      <PropertyRef Name="Cod_Motorolo" />
+    </Key>
+    <Property Name="Cod_DinDomicilio" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Motorolo" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Hora" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Base_caja" Type="Double" />
+    <Property Name="Num_Efectivo" Type="Int32" />
+    <Property Name="Num_cheques" Type="Int32" />
+    <Property Name="Num_tarjetas_credito" Type="Int32" />
+    <Property Name="Val_Efectivo" Type="Double" />
+    <Property Name="Val_cheques" Type="Double" />
+    <Property Name="Val_tarjetas_credito" Type="Double" />
+    <Property Name="Comandas_extra" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Motorolos" Relationship="SqlGerenteModel.FK_DinDomicilio_Motorolos" FromRole="DinDomicilio" ToRole="Motorolos" />
+  </EntityType>
+  <EntityType Name="Domicilio_Cierre">
+    <Key>
+      <PropertyRef Name="Cod_domicilio_cierre" />
+    </Key>
+    <Property Name="Cod_domicilio_cierre" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Forma_pago" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Domicilio_Mix">
+    <Key>
+      <PropertyRef Name="Cod_domicilio_mix" />
+    </Key>
+    <Property Name="Cod_domicilio_mix" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_plu" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Precio" Type="Double" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Ruc" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Direccion" />
+      <PropertyRef Name="Razon_social" />
+      <PropertyRef Name="Telefono" />
+      <PropertyRef Name="Certificado" />
+      <PropertyRef Name="Pass_certificado" />
+      <PropertyRef Name="ObligadoContabilidad" />
+      <PropertyRef Name="Cod_Tipo_Emision" />
+      <PropertyRef Name="Cod_Tipo_Ambiente" />
+      <PropertyRef Name="Numero_Resolucion" />
+    </Key>
+    <Property Name="Cod_empresa" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Ruc" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Fechainicio" Type="DateTime" Precision="3" />
+    <Property Name="Fechafin" Type="DateTime" Precision="3" />
+    <Property Name="Cod_pais" Type="Int32" />
+    <Property Name="Ciudad" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Razon_social" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo_contribuyente" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_resolucion" Type="DateTime" Precision="3" />
+    <Property Name="Certificado" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Pass_certificado" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ObligadoContabilidad" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Cod_Tipo_Emision" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Tipo_Ambiente" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Resolucion" Type="Int32" Nullable="false" />
+    <Property Name="Resolucion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="Cod_empresa" />
+    </Key>
+    <Property Name="Cod_empresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Ruc" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Fechainicio" Type="DateTime" Precision="3" />
+    <Property Name="Fechafin" Type="DateTime" Precision="3" />
+    <Property Name="Cod_pais" Type="Int32" />
+    <Property Name="Ciudad" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Razon_social" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo_contribuyente" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_resolucion" Type="DateTime" Precision="3" />
+    <Property Name="Certificado" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Pass_certificado" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ObligadoContabilidad" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Cod_Tipo_Emision" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Tipo_Ambiente" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Resolucion" Type="Int32" Nullable="false" />
+    <Property Name="Resolucion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EnvioCorreos">
+    <Key>
+      <PropertyRef Name="Cod_Envio" />
+    </Key>
+    <Property Name="Cod_Envio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Mail" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Estados_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Estado" />
+    </Key>
+    <Property Name="Cod_Estado" Type="Int32" Nullable="false" />
+    <Property Name="Factura" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Asignacion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Factura_Anulacion">
+    <Key>
+      <PropertyRef Name="Cod_Factura" />
+    </Key>
+    <Property Name="Cod_Factura" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Motivo" Type="Int32" />
+    <Property Name="Cod_Administrador" Type="Int32" />
+    <Property Name="Cod_Motorolo" Type="Int32" />
+    <Property Name="Observacion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Factura_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Factura" />
+    </Key>
+    <Property Name="Cod_Factura" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Cod_Usuario" Type="Int32" />
+    <Property Name="Cod_Administrador" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Comentario" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Consumidor_Final" Type="Int32" />
+    <Property Name="Cod_Telefono" Type="Int32" />
+    <Property Name="Transferencia" Type="Int32" />
+    <Property Name="Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="DescuentoIVA" Type="Double" />
+    <Property Name="DescuentoNoIVA" Type="Double" />
+    <Property Name="Estado_Transferencia" Type="Int32" />
+    <Property Name="Direccion_Alterna" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Porcentaje" Type="Double" />
+    <Property Name="Cod_Usuario_Descto" Type="Int32" />
+    <Property Name="Propina" Type="Double" />
+    <Property Name="Cod_Nota_Credito" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo_Facturacion" Type="Int32" />
+    <Property Name="Cod_Tipo_Comprobante" Type="Int32" />
+    <Property Name="Clave_Acceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Numero_Factura" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Autorizado" Type="Int32" />
+    <Property Name="Datos_Adicionales" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <Property Name="FechaOperacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Cliente_Domicilio" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Cliente_Domicilio" FromRole="Factura_Domicilio" ToRole="Cliente_Domicilio" />
+    <NavigationProperty Name="Motorolos" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Motorolos" FromRole="Factura_Domicilio" ToRole="Motorolos" />
+    <NavigationProperty Name="Periodo" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Periodo" FromRole="Factura_Domicilio" ToRole="Periodo" />
+  </EntityType>
+  <EntityType Name="Factura_FormasPago">
+    <Key>
+      <PropertyRef Name="Cod_FFormasPago" />
+    </Key>
+    <Property Name="Cod_FFormasPago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Factura" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Tarjeta" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Seguridad" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha_Caducidad" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Billete" Type="Double" />
+    <Property Name="NumeroCheque" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Banco" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Titular" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Referencia_Billete" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Valor_Billete" Type="Double" />
+    <Property Name="Total_Pagar" Type="Double" />
+    <Property Name="Propina" Type="Double" />
+    <Property Name="ClienteAx" Type="Int32" />
+    <NavigationProperty Name="FormasPago" Relationship="SqlGerenteModel.FK_Factura_FormasPago" FromRole="Factura_FormasPago" ToRole="FormasPago" />
+  </EntityType>
+  <EntityType Name="FormasPago">
+    <Key>
+      <PropertyRef Name="Cod_FormaPago" />
+    </Key>
+    <Property Name="Cod_FormaPago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Desglose" Type="Int32" />
+    <NavigationProperty Name="Factura_FormasPago" Relationship="SqlGerenteModel.FK_Factura_FormasPago" FromRole="FormasPago" ToRole="Factura_FormasPago" />
+    <NavigationProperty Name="TipoFormaPago" Relationship="SqlGerenteModel.FK_FormasPago_TipoFormaPago" FromRole="FormasPago" ToRole="TipoFormaPago" />
+  </EntityType>
+  <EntityType Name="GruposArt">
+    <Key>
+      <PropertyRef Name="Cod_GrupoArt" />
+    </Key>
+    <Property Name="Cod_GrupoArt" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Articulos" Relationship="SqlGerenteModel.FK_Articulos_GruposArt" FromRole="GruposArt" ToRole="Articulos" />
+  </EntityType>
+  <EntityType Name="Impuestos">
+    <Key>
+      <PropertyRef Name="Cod_Impuesto" />
+    </Key>
+    <Property Name="Cod_Impuesto" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Porcentaje" Type="Double" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Inmueble">
+    <Key>
+      <PropertyRef Name="Cod_Inmueble" />
+    </Key>
+    <Property Name="Cod_Inmueble" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Tipo_Inmueble" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Calle1" Type="Int32" />
+    <Property Name="Cod_Calle2" Type="Int32" />
+    <Property Name="Cod_ZipCode" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Direccion" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Calle_Back1" Type="Int32" />
+    <Property Name="Cod_Calle_Back2" Type="Int32" />
+    <NavigationProperty Name="Telefonos" Relationship="SqlGerenteModel.FK_Telefonos_Inmueble" FromRole="Inmueble" ToRole="Telefonos" />
+  </EntityType>
+  <EntityType Name="Log_Facturacion_Electronica">
+    <Key>
+      <PropertyRef Name="lg_id" />
+    </Key>
+    <Property Name="lg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lg_clave_acceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lg_estado" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lg_mensaje" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Cod_factura" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="lg_fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Modificador">
+    <Key>
+      <PropertyRef Name="Cod_Modificador" />
+    </Key>
+    <Property Name="Cod_Modificador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Modificador" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Motorolos">
+    <Key>
+      <PropertyRef Name="Cod_Motorolo" />
+    </Key>
+    <Property Name="Cod_Motorolo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Compania" Type="Int32" />
+    <Property Name="Cedula" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Tarjeta" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Nomina" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Telefono" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="DinDomicilio" Relationship="SqlGerenteModel.FK_DinDomicilio_Motorolos" FromRole="Motorolos" ToRole="DinDomicilio" />
+    <NavigationProperty Name="Factura_Domicilio" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Motorolos" FromRole="Motorolos" ToRole="Factura_Domicilio" />
+    <NavigationProperty Name="Restaurante" Relationship="SqlGerenteModel.FK_Motorolos_Restaurante" FromRole="Motorolos" ToRole="Restaurante" />
+  </EntityType>
+  <EntityType Name="NivelesPyG">
+    <Key>
+      <PropertyRef Name="Cod_Grupo" />
+    </Key>
+    <Property Name="Cod_Grupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Tipo" Type="Int32" />
+    <Property Name="OrdenImpresion" Type="Int32" />
+    <Property Name="Operador" Type="Int32" />
+    <Property Name="Nivel" Type="Int32" />
+    <NavigationProperty Name="NivelesPyG1" Relationship="SqlGerenteModel.FK_NivelesPyG_NivelesPyG1" FromRole="NivelesPyG" ToRole="NivelesPyG1" />
+    <NavigationProperty Name="NivelesPyG2" Relationship="SqlGerenteModel.FK_NivelesPyG_NivelesPyG1" FromRole="NivelesPyG1" ToRole="NivelesPyG" />
+    <NavigationProperty Name="Rubros" Relationship="SqlGerenteModel.FK_RUBROS_REFERENCE_NIVELESP" FromRole="NivelesPyG" ToRole="Rubros" />
+  </EntityType>
+  <EntityType Name="Nota_Credito">
+    <Key>
+      <PropertyRef Name="Cod_Nota_Credito" />
+    </Key>
+    <Property Name="Cod_Nota_Credito" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Cod_Usuario" Type="Int32" />
+    <Property Name="Cod_Administrador" Type="Int32" />
+    <Property Name="Estado_Transferencia" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Comentario" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Consumidor_Final" Type="Int32" />
+    <Property Name="Cod_Telefono" Type="Int32" />
+    <Property Name="Transferencia" Type="Int32" />
+    <Property Name="Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="DescuentoIVA" Type="Double" />
+    <Property Name="DescuentoNoIVA" Type="Double" />
+    <Property Name="Direccion_Alterna" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Porcentaje" Type="Double" />
+    <Property Name="Cod_Usuario_Descto" Type="Int32" />
+    <Property Name="Propina" Type="Double" />
+    <Property Name="Clave_Acceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo_Facturacion" Type="Int32" />
+    <Property Name="Autorizado" Type="Int32" />
+    <Property Name="Descuento" Type="Double" />
+    <Property Name="FechaOperacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Datos_Adicionales" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente_Domicilio" Relationship="SqlGerenteModel.FK_Nota_Credito_Cliente_Domicilio" FromRole="Nota_Credito" ToRole="Cliente_Domicilio" />
+    <NavigationProperty Name="Detalle_Nota_Credito" Relationship="SqlGerenteModel.FK_Detalle_Nota_Credito_Nota_Credito" FromRole="Nota_Credito" ToRole="Detalle_Nota_Credito" />
+    <NavigationProperty Name="Periodo" Relationship="SqlGerenteModel.FK_Nota_Credito_Domicilio_Periodo" FromRole="Nota_Credito" ToRole="Periodo" />
+    <NavigationProperty Name="Tipo_Comprobante" Relationship="SqlGerenteModel.FK_Nota_Credito_Tipo_Comprobante" FromRole="Nota_Credito" ToRole="Tipo_Comprobante" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="Cod_Pais" />
+    </Key>
+    <Property Name="Cod_Pais" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Moneda" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Tipo_Cambio" Type="Double" />
+    <Property Name="Grupo_Impuestos" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Diferencia_Cierre" Type="Double" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="SO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Valor_Inventario" Type="Int32" />
+    <Property Name="Monto_Factura" Type="Double" />
+    <NavigationProperty Name="Cadena" Relationship="SqlGerenteModel.FK_Cadena_Pais" FromRole="Pais" ToRole="Cadena" />
+    <NavigationProperty Name="Region" Relationship="SqlGerenteModel.FK_REGION_REFERENCE_PAIS" FromRole="Pais" ToRole="Region" />
+  </EntityType>
+  <EntityType Name="Pantalla">
+    <Key>
+      <PropertyRef Name="Cod_Pantalla" />
+    </Key>
+    <Property Name="Cod_Pantalla" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Mostrar" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+    <Property Name="Nombre_Formulario" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Orden_Menu" Type="Double" Nullable="false" />
+    <Property Name="Nivel" Type="Int32" />
+    <Property Name="Ruta" Type="String" MaxLength="200" Unicode="false" FixedLength="true" />
+    <Property Name="Imagen" Type="String" MaxLength="200" Unicode="false" FixedLength="true" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Ecuador" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+    <Property Name="Venezuela" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+    <Property Name="Colombia" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Paquete">
+    <Key>
+      <PropertyRef Name="Cod_Paquete" />
+    </Key>
+    <Property Name="Cod_Paquete" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Caducidad" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="Cod_Perfil" />
+    </Key>
+    <Property Name="Cod_Perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Periodo">
+    <Key>
+      <PropertyRef Name="Cod_Periodo" />
+    </Key>
+    <Property Name="Cod_Periodo" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Inicial" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Final" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Factura_Domicilio" Relationship="SqlGerenteModel.FK_Factura_Domicilio_Periodo" FromRole="Periodo" ToRole="Factura_Domicilio" />
+    <NavigationProperty Name="Nota_Credito" Relationship="SqlGerenteModel.FK_Nota_Credito_Domicilio_Periodo" FromRole="Periodo" ToRole="Nota_Credito" />
+    <NavigationProperty Name="Restaurante" Relationship="SqlGerenteModel.FK_Periodo_Restaurante" FromRole="Periodo" ToRole="Restaurante" />
+  </EntityType>
+  <EntityType Name="PermisosPerfil">
+    <Key>
+      <PropertyRef Name="Cod_Acceso" />
+      <PropertyRef Name="Cod_Perfil" />
+      <PropertyRef Name="Cod_Pantalla" />
+    </Key>
+    <Property Name="Cod_Acceso" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Perfil" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Pantalla" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personal_Domicilio">
+    <Key>
+      <PropertyRef Name="Cedula" />
+    </Key>
+    <Property Name="Cedula" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha_Ingreso" Type="DateTime" Precision="3" />
+    <Property Name="Tipo_Empleado" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Plu_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Plu_Promocion" />
+    </Key>
+    <Property Name="Cod_Plu" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Plu_Promocion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Detalle_Factura" Relationship="SqlGerenteModel.FK_Detalle_Factura_Plu_Promocion" FromRole="Plu_Promocion" ToRole="Detalle_Factura" />
+    <NavigationProperty Name="Detalle_Nota_Credito" Relationship="SqlGerenteModel.FK_Detalle_Nota_Credito_Plu_Promocion" FromRole="Plu_Promocion" ToRole="Detalle_Nota_Credito" />
+    <NavigationProperty Name="Promocion" Relationship="SqlGerenteModel.FK_Referencia_Promocion_Promociones" FromRole="Plu_Promocion" ToRole="Promocion" />
+  </EntityType>
+  <EntityType Name="Plu_Sujeto">
+    <Key>
+      <PropertyRef Name="Cod_Plu_Promocion" />
+      <PropertyRef Name="Cod_Plu" />
+    </Key>
+    <Property Name="Cod_Plu_Promocion" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Plu" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Plus">
+    <Key>
+      <PropertyRef Name="Cod_Plu" />
+      <PropertyRef Name="Cod_Cadena" />
+      <PropertyRef Name="Num_Plu" />
+    </Key>
+    <Property Name="Cod_Plu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" Nullable="false" />
+    <Property Name="Cod_DeptoPlu" Type="Int32" />
+    <Property Name="Cod_Multiple" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Plu" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Clasificacion" Type="Int32" />
+    <Property Name="Impuesto" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Precio_plu">
+    <Key>
+      <PropertyRef Name="Cod_Precio_plu" />
+    </Key>
+    <Property Name="Cod_Precio_plu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Categoria" Type="Int32" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Valor_Neto" Type="Double" />
+    <Property Name="Valor_Iva" Type="Double" />
+    <Property Name="Pvp" Type="Double" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Promocion" />
+    </Key>
+    <Property Name="Cod_Promocion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Promocion" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Caducidad" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Plu_Promocion" Relationship="SqlGerenteModel.FK_Referencia_Promocion_Promociones" FromRole="Promocion" ToRole="Plu_Promocion" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="Cod_Proveedor" />
+    </Key>
+    <Property Name="Cod_Proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoAX" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Tienda" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Ruc" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="Direccion" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Pais" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Provincia" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CuentaBanco" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ModoPago" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="GrupoProveedor" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="TerminoPago" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Moneda" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="LineaProveedor" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Planta" Type="Int32" />
+    <Property Name="Compras" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="Cod_Provincia" />
+    </Key>
+    <Property Name="Cod_Provincia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Region" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Recetas">
+    <Key>
+      <PropertyRef Name="Cod_Receta" />
+    </Key>
+    <Property Name="Cod_Receta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Cod_Subrecet" Type="Int32" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Articulo" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RecetaSugerencia">
+    <Key>
+      <PropertyRef Name="Cod_RecetaSugerencia" />
+    </Key>
+    <Property Name="Cod_RecetaSugerencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Cod_Subrecet" Type="Int32" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="Int32" />
+    <Property Name="Cod_Articulo" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="Cod_Region" />
+    </Key>
+    <Property Name="Cod_Region" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ABR" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Pais" Relationship="SqlGerenteModel.FK_REGION_REFERENCE_PAIS" FromRole="Region" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Respuesta_Autorizacion_Comprobante">
+    <Key>
+      <PropertyRef Name="rsp_claveAcceso" />
+    </Key>
+    <Property Name="rsp_claveAcceso" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="rsp_estado_autorizacion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rsp_autorizacion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="rsp_ambiente" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rsp_fecha_autorizacion" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Respuesta_Recepcion_Comprobante">
+    <Key>
+      <PropertyRef Name="rcp_id" />
+    </Key>
+    <Property Name="rcp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rcp_clave_acceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="rcp_estado" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Restaurante">
+    <Key>
+      <PropertyRef Name="Cod_Restaurante" />
+    </Key>
+    <Property Name="Cod_Restaurante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Cod_Ciudad" Type="Int32" />
+    <Property Name="Cod_Categoria" Type="Int32" />
+    <Property Name="Cod_Registradora" Type="Int32" />
+    <Property Name="Cod_TipoRestaurante" Type="Int32" />
+    <Property Name="Cod_Tienda" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="Nombre_ODBC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Planta" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Dimension_AX" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Numero_Luch" Type="Int32" />
+    <Property Name="Filtro_Articulos" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="Fisica_Dias" Type="Int32" />
+    <Property Name="PYG_Dias" Type="Int32" />
+    <Property Name="Servicio" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="Int32" />
+    <Property Name="Domicilio" Type="Int32" />
+    <Property Name="Correo" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Gerente_Local" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha_Apertura" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Cierre" Type="DateTime" Precision="3" />
+    <Property Name="Codigo_SRI" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Tamano" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Localizacion" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Costeo" Type="Int32" />
+    <Property Name="Autoimpresor" Type="Int32" />
+    <Property Name="SwitchT" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Cupon_Automatico" Type="Int32" />
+    <Property Name="Prefijo" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="Desde" Type="Int32" />
+    <Property Name="Hasta" Type="Int32" />
+    <Property Name="Resolucion" Type="Int64" />
+    <Property Name="Fecha_Resolucion" Type="DateTime" Precision="3" />
+    <Property Name="CentroCostoPLT" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Establec_SRI" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Sitio" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="PedidoSugerido" Type="Int32" />
+    <Property Name="Tipo_Nomina" Type="Int16" />
+    <Property Name="serie" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="PuntoEmision" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="clave_contingencia" Relationship="SqlGerenteModel.FK_clave_contingencia_Restaurante" FromRole="Restaurante" ToRole="clave_contingencia" />
+    <NavigationProperty Name="Motorolos" Relationship="SqlGerenteModel.FK_Motorolos_Restaurante" FromRole="Restaurante" ToRole="Motorolos" />
+    <NavigationProperty Name="Periodo" Relationship="SqlGerenteModel.FK_Periodo_Restaurante" FromRole="Restaurante" ToRole="Periodo" />
+    <NavigationProperty Name="Secuencia" Relationship="SqlGerenteModel.FK_SECUENCI_RLSH_87_RESTAURA" FromRole="Restaurante" ToRole="Secuencia" />
+  </EntityType>
+  <EntityType Name="Rubros">
+    <Key>
+      <PropertyRef Name="Cod_Rubros" />
+    </Key>
+    <Property Name="Cod_Rubros" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Cta_Axapta" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="OrdenPyG" Type="Int32" />
+    <NavigationProperty Name="NivelesPyG" Relationship="SqlGerenteModel.FK_RUBROS_REFERENCE_NIVELESP" FromRole="Rubros" ToRole="NivelesPyG" />
+  </EntityType>
+  <EntityType Name="Secuencia">
+    <Key>
+      <PropertyRef Name="Cod_Secuencia" />
+    </Key>
+    <Property Name="Cod_Secuencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Num_Codigo" Type="Int32" />
+    <NavigationProperty Name="Restaurante" Relationship="SqlGerenteModel.FK_SECUENCI_RLSH_87_RESTAURA" FromRole="Secuencia" ToRole="Restaurante" />
+    <NavigationProperty Name="TipoMov" Relationship="SqlGerenteModel.FK_Secuencia_TipoMov1" FromRole="Secuencia" ToRole="TipoMov" />
+  </EntityType>
+  <EntityType Name="Secuencia_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Domi_Secuencia" />
+    </Key>
+    <Property Name="Cod_Domi_Secuencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+    <Property Name="Numero" Type="Int32" />
+    <NavigationProperty Name="Tipo_Accion_Domi" Relationship="SqlGerenteModel.FK_Secuencia_Domicilio_Tipo_Accion_Domi" FromRole="Secuencia_Domicilio" ToRole="Tipo_Accion_Domi" />
+  </EntityType>
+  <EntityType Name="SubRecet">
+    <Key>
+      <PropertyRef Name="Cod_Subrecet" />
+    </Key>
+    <Property Name="Cod_Subrecet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Tipo_Subreceta" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Costo" Type="Double" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Num_Subreceta" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Unidad_Receta" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Unidad_Compra" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Unidad_Inventario" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SubRecetaTrans">
+    <Key>
+      <PropertyRef Name="Cod_SubReceta_Trans" />
+    </Key>
+    <Property Name="Cod_SubReceta_Trans" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Subrecet" Type="Int32" />
+    <Property Name="Cod_Articulo" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="Cod_Articulo_Sub" Type="Int32" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="NumSubreceta" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Telefono_Cliente">
+    <Key>
+      <PropertyRef Name="Cod_Cliente_Domicilio" />
+      <PropertyRef Name="Cod_Telefono" />
+    </Key>
+    <Property Name="Cod_Cliente_Domicilio" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Telefono" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente_Domicilio" Relationship="SqlGerenteModel.FK_Telefono_Cliente_Cliente_Domicilio" FromRole="Telefono_Cliente" ToRole="Cliente_Domicilio" />
+  </EntityType>
+  <EntityType Name="Telefonos">
+    <Key>
+      <PropertyRef Name="Cod_Telefono" />
+      <PropertyRef Name="Cod_Ciudad" />
+    </Key>
+    <Property Name="Cod_Telefono" Type="Int32" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Ciudad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Inmueble" Relationship="SqlGerenteModel.FK_Telefonos_Inmueble" FromRole="Telefonos" ToRole="Inmueble" />
+  </EntityType>
+  <EntityType Name="Tipo_Accion_Domi">
+    <Key>
+      <PropertyRef Name="Cod_Accion_Domi" />
+    </Key>
+    <Property Name="Cod_Accion_Domi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Inicial" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Secuencia_Domicilio" Relationship="SqlGerenteModel.FK_Secuencia_Domicilio_Tipo_Accion_Domi" FromRole="Tipo_Accion_Domi" ToRole="Secuencia_Domicilio" />
+  </EntityType>
+  <EntityType Name="Tipo_Ambiente">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Ambiente" />
+    </Key>
+    <Property Name="Cod_Tipo_Ambiente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Codigo" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Tipo_Comprobante">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Comprobante" />
+    </Key>
+    <Property Name="Cod_Tipo_Comprobante" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="Nota_Credito" Relationship="SqlGerenteModel.FK_Nota_Credito_Tipo_Comprobante" FromRole="Tipo_Comprobante" ToRole="Nota_Credito" />
+  </EntityType>
+  <EntityType Name="Tipo_Documento">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Documento" />
+    </Key>
+    <Property Name="Cod_Tipo_Documento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="DescripcionSRI" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tipo_Emision">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Emision" />
+    </Key>
+    <Property Name="Cod_Tipo_Emision" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Tipo_Facturacion">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Facturacion" />
+    </Key>
+    <Property Name="Cod_Tipo_Facturacion" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Configuracion_Domicilio" Relationship="SqlGerenteModel.FK_Configuracion_Domicilio_Tipo_Facturacion" FromRole="Tipo_Facturacion" ToRole="Configuracion_Domicilio" />
+  </EntityType>
+  <EntityType Name="Tipo_Inmueble">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Inmueble" />
+    </Key>
+    <Property Name="Cod_Tipo_Inmueble" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Detalle" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tipo_Modificador">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Modificador" />
+    </Key>
+    <Property Name="Cod_Tipo_Modificador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tipo_Modificador_Plu">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Modificador_Plu" />
+    </Key>
+    <Property Name="Cod_Tipo_Modificador_Plu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Modificador" Type="Int32" />
+    <Property Name="Cod_Plu" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tipo_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Promocion" />
+    </Key>
+    <Property Name="Cod_Tipo_Promocion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TipoCCC">
+    <Key>
+      <PropertyRef Name="Cod_Canje" />
+    </Key>
+    <Property Name="Cod_Canje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TipoFormaPago">
+    <Key>
+      <PropertyRef Name="Cod_TipoF" />
+    </Key>
+    <Property Name="Cod_TipoF" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Cod_Pais" Type="Int32" />
+    <NavigationProperty Name="FormasPago" Relationship="SqlGerenteModel.FK_FormasPago_TipoFormaPago" FromRole="TipoFormaPago" ToRole="FormasPago" />
+  </EntityType>
+  <EntityType Name="TipoMov">
+    <Key>
+      <PropertyRef Name="Cod_TipMovInv" />
+    </Key>
+    <Property Name="Cod_TipMovInv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Inicial_Secuencia" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Tipo" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="Secuencia" Relationship="SqlGerenteModel.FK_Secuencia_TipoMov1" FromRole="TipoMov" ToRole="Secuencia" />
+  </EntityType>
+  <EntityType Name="TipoRestaurante">
+    <Key>
+      <PropertyRef Name="Cod_TipoRestaurante" />
+    </Key>
+    <Property Name="Cod_TipoRestaurante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TiposCuenta">
+    <Key>
+      <PropertyRef Name="Cod_Tipo" />
+    </Key>
+    <Property Name="Cod_Tipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Modulo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="Cod_Ubicacion" />
+    </Key>
+    <Property Name="Cod_Ubicacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UbicacionCadena">
+    <Key>
+      <PropertyRef Name="Cod_Ubicacion_Cadenas" />
+    </Key>
+    <Property Name="Cod_Ubicacion_Cadenas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Ubicacion" Type="Int32" />
+    <Property Name="Cod_Cadena" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Unidades">
+    <Key>
+      <PropertyRef Name="Cod_Unidad" />
+    </Key>
+    <Property Name="Cod_Unidad" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Conversion" Relationship="SqlGerenteModel.FK_CONVERT_REFERENCE_UNIDADES" FromRole="Unidades" ToRole="Conversion" />
+    <NavigationProperty Name="Conversion1" Relationship="SqlGerenteModel.FK_Convert_Unidades" FromRole="Unidades" ToRole="Conversion" />
+  </EntityType>
+  <EntityType Name="UserRestaurante">
+    <Key>
+      <PropertyRef Name="Cod_UserRestaurante" />
+    </Key>
+    <Property Name="Cod_UserRestaurante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Usuario" Type="Int32" />
+    <Property Name="Cod_Restaurante" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Cod_Usuario" />
+    </Key>
+    <Property Name="Cod_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Perfil" Type="Int32" />
+    <Property Name="Usuario" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Clave" Type="Binary" MaxLength="256" FixedLength="false" />
+    <Property Name="Iniciales" Type="String" MaxLength="6" Unicode="false" FixedLength="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Zip">
+    <Key>
+      <PropertyRef Name="Cod_ZipCode" />
+    </Key>
+    <Property Name="Cod_ZipCode" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Area" Type="Int32" />
+    <Property Name="Cod_Zona" Type="Int32" />
+    <Property Name="Cod_Zip" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Zip_Calle">
+    <Key>
+      <PropertyRef Name="Cod_ZipCode" />
+      <PropertyRef Name="Cod_Calle" />
+    </Key>
+    <Property Name="Cod_ZipCode" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Cod_Calle" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Zip_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Promocion" />
+      <PropertyRef Name="Cod_ZipCode" />
+    </Key>
+    <Property Name="Cod_Promocion" Type="Int32" Nullable="false" />
+    <Property Name="Cod_ZipCode" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Numero" Type="Int32" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="Cod_Zona" />
+    </Key>
+    <Property Name="Cod_Zona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Articulos_GruposArt">
+    <End Role="GruposArt" Type="SqlGerenteModel.GruposArt" Multiplicity="0..1" />
+    <End Role="Articulos" Type="SqlGerenteModel.Articulos" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Cadena_Pais">
+    <End Role="Pais" Type="SqlGerenteModel.Pais" Multiplicity="0..1" />
+    <End Role="Cadena" Type="SqlGerenteModel.Cadena" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_clave_contingencia_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Restaurante" Multiplicity="0..1" />
+    <End Role="clave_contingencia" Type="SqlGerenteModel.clave_contingencia" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Cliente_Domicilio" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Factura_Domicilio" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Nota_Credito_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Cliente_Domicilio" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Nota_Credito" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Telefono_Cliente_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Cliente_Domicilio" Multiplicity="1" />
+    <End Role="Telefono_Cliente" Type="SqlGerenteModel.Telefono_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente_Domicilio">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Principal>
+      <Dependent Role="Telefono_Cliente">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Configuracion_Domicilio_Tipo_Facturacion">
+    <End Role="Tipo_Facturacion" Type="SqlGerenteModel.Tipo_Facturacion" Multiplicity="0..1" />
+    <End Role="Configuracion_Domicilio" Type="SqlGerenteModel.Configuracion_Domicilio" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CONVERT_REFERENCE_UNIDADES">
+    <End Role="Unidades" Type="SqlGerenteModel.Unidades" Multiplicity="0..1" />
+    <End Role="Conversion" Type="SqlGerenteModel.Conversion" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Convert_Unidades">
+    <End Role="Unidades" Type="SqlGerenteModel.Unidades" Multiplicity="0..1" />
+    <End Role="Conversion" Type="SqlGerenteModel.Conversion" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Detalle_Factura_Plu_Promocion">
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Plu_Promocion" Multiplicity="0..1" />
+    <End Role="Detalle_Factura" Type="SqlGerenteModel.Detalle_Factura" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Detalle_Nota_Credito_Nota_Credito">
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Nota_Credito" Multiplicity="0..1" />
+    <End Role="Detalle_Nota_Credito" Type="SqlGerenteModel.Detalle_Nota_Credito" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Detalle_Nota_Credito_Plu_Promocion">
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Plu_Promocion" Multiplicity="0..1" />
+    <End Role="Detalle_Nota_Credito" Type="SqlGerenteModel.Detalle_Nota_Credito" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DinDomicilio_Motorolos">
+    <End Role="Motorolos" Type="SqlGerenteModel.Motorolos" Multiplicity="1" />
+    <End Role="DinDomicilio" Type="SqlGerenteModel.DinDomicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Motorolos">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Principal>
+      <Dependent Role="DinDomicilio">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Motorolos">
+    <End Role="Motorolos" Type="SqlGerenteModel.Motorolos" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Factura_Domicilio" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Periodo">
+    <End Role="Periodo" Type="SqlGerenteModel.Periodo" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Factura_Domicilio" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Factura_FormasPago">
+    <End Role="FormasPago" Type="SqlGerenteModel.FormasPago" Multiplicity="1" />
+    <End Role="Factura_FormasPago" Type="SqlGerenteModel.Factura_FormasPago" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_FormasPago_TipoFormaPago">
+    <End Role="TipoFormaPago" Type="SqlGerenteModel.TipoFormaPago" Multiplicity="0..1" />
+    <End Role="FormasPago" Type="SqlGerenteModel.FormasPago" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Telefonos_Inmueble">
+    <End Role="Inmueble" Type="SqlGerenteModel.Inmueble" Multiplicity="0..1" />
+    <End Role="Telefonos" Type="SqlGerenteModel.Telefonos" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Motorolos_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Restaurante" Multiplicity="0..1" />
+    <End Role="Motorolos" Type="SqlGerenteModel.Motorolos" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_NivelesPyG_NivelesPyG1">
+    <End Role="NivelesPyG" Type="SqlGerenteModel.NivelesPyG" Multiplicity="0..1" />
+    <End Role="NivelesPyG1" Type="SqlGerenteModel.NivelesPyG" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_RUBROS_REFERENCE_NIVELESP">
+    <End Role="NivelesPyG" Type="SqlGerenteModel.NivelesPyG" Multiplicity="0..1" />
+    <End Role="Rubros" Type="SqlGerenteModel.Rubros" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Nota_Credito_Domicilio_Periodo">
+    <End Role="Periodo" Type="SqlGerenteModel.Periodo" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Nota_Credito" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Nota_Credito_Tipo_Comprobante">
+    <End Role="Tipo_Comprobante" Type="SqlGerenteModel.Tipo_Comprobante" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Nota_Credito" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_REGION_REFERENCE_PAIS">
+    <End Role="Pais" Type="SqlGerenteModel.Pais" Multiplicity="0..1" />
+    <End Role="Region" Type="SqlGerenteModel.Region" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Periodo_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Restaurante" Multiplicity="0..1" />
+    <End Role="Periodo" Type="SqlGerenteModel.Periodo" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Referencia_Promocion_Promociones">
+    <End Role="Promocion" Type="SqlGerenteModel.Promocion" Multiplicity="1" />
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Plu_Promocion" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_SECUENCI_RLSH_87_RESTAURA">
+    <End Role="Restaurante" Type="SqlGerenteModel.Restaurante" Multiplicity="0..1" />
+    <End Role="Secuencia" Type="SqlGerenteModel.Secuencia" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Secuencia_TipoMov1">
+    <End Role="TipoMov" Type="SqlGerenteModel.TipoMov" Multiplicity="0..1" />
+    <End Role="Secuencia" Type="SqlGerenteModel.Secuencia" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Secuencia_Domicilio_Tipo_Accion_Domi">
+    <End Role="Tipo_Accion_Domi" Type="SqlGerenteModel.Tipo_Accion_Domi" Multiplicity="0..1" />
+    <End Role="Secuencia_Domicilio" Type="SqlGerenteModel.Secuencia_Domicilio" Multiplicity="*" />
+  </Association>
+</Schema>

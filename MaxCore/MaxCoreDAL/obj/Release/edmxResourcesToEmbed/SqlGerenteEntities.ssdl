@@ -1,0 +1,1907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SqlGerenteModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="SqlGerenteModelStoreContainer">
+    <EntitySet Name="Acceso" EntityType="SqlGerenteModel.Store.Acceso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Area" EntityType="SqlGerenteModel.Store.Area" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Articulos" EntityType="SqlGerenteModel.Store.Articulos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cadena" EntityType="SqlGerenteModel.Store.Cadena" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Calle" EntityType="SqlGerenteModel.Store.Calle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Calle_Restaurante" EntityType="SqlGerenteModel.Store.Calle_Restaurante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Calles_Back" EntityType="SqlGerenteModel.Store.Calles_Back" store:Type="Tables" store:Schema="dbo" store:Name="Calles_Back">
+      <DefiningQuery>SELECT 
+      [Calles_Back].[Cod_Calle_Back] AS [Cod_Calle_Back], 
+      [Calles_Back].[Descripcion] AS [Descripcion], 
+      [Calles_Back].[Cod_Restaurante] AS [Cod_Restaurante], 
+      [Calles_Back].[Estado] AS [Estado]
+      FROM [dbo].[Calles_Back] AS [Calles_Back]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Categoria" EntityType="SqlGerenteModel.Store.Categoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ciudad" EntityType="SqlGerenteModel.Store.Ciudad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Clasificacion" EntityType="SqlGerenteModel.Store.Clasificacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="clave_contingencia" EntityType="SqlGerenteModel.Store.clave_contingencia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cliente_Domicilio" EntityType="SqlGerenteModel.Store.Cliente_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientesAx" EntityType="SqlGerenteModel.Store.ClientesAx" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Compania" EntityType="SqlGerenteModel.Store.Compania" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Config_RecetaSugerencia" EntityType="SqlGerenteModel.Store.Config_RecetaSugerencia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Configuracion_Domicilio" EntityType="SqlGerenteModel.Store.Configuracion_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Conversion" EntityType="SqlGerenteModel.Store.Conversion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeptoPlus" EntityType="SqlGerenteModel.Store.DeptoPlus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Descuentos_Cadena" EntityType="SqlGerenteModel.Store.Descuentos_Cadena" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Detalle_Factura" EntityType="SqlGerenteModel.Store.Detalle_Factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Detalle_Nota_Credito" EntityType="SqlGerenteModel.Store.Detalle_Nota_Credito" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DinDomicilio" EntityType="SqlGerenteModel.Store.DinDomicilio" store:Type="Tables" store:Schema="dbo" store:Name="DinDomicilio">
+      <DefiningQuery>SELECT 
+      [DinDomicilio].[Cod_DinDomicilio] AS [Cod_DinDomicilio], 
+      [DinDomicilio].[Cod_Motorolo] AS [Cod_Motorolo], 
+      [DinDomicilio].[Fecha] AS [Fecha], 
+      [DinDomicilio].[Hora] AS [Hora], 
+      [DinDomicilio].[Base_caja] AS [Base_caja], 
+      [DinDomicilio].[Num_Efectivo] AS [Num_Efectivo], 
+      [DinDomicilio].[Num_cheques] AS [Num_cheques], 
+      [DinDomicilio].[Num_tarjetas_credito] AS [Num_tarjetas_credito], 
+      [DinDomicilio].[Val_Efectivo] AS [Val_Efectivo], 
+      [DinDomicilio].[Val_cheques] AS [Val_cheques], 
+      [DinDomicilio].[Val_tarjetas_credito] AS [Val_tarjetas_credito], 
+      [DinDomicilio].[Comandas_extra] AS [Comandas_extra], 
+      [DinDomicilio].[Estado] AS [Estado]
+      FROM [dbo].[DinDomicilio] AS [DinDomicilio]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Domicilio_Cierre" EntityType="SqlGerenteModel.Store.Domicilio_Cierre" store:Type="Tables" store:Schema="dbo" store:Name="Domicilio_Cierre">
+      <DefiningQuery>SELECT 
+      [Domicilio_Cierre].[Cod_domicilio_cierre] AS [Cod_domicilio_cierre], 
+      [Domicilio_Cierre].[Cod_Restaurante] AS [Cod_Restaurante], 
+      [Domicilio_Cierre].[Forma_pago] AS [Forma_pago], 
+      [Domicilio_Cierre].[Total] AS [Total], 
+      [Domicilio_Cierre].[Fecha] AS [Fecha]
+      FROM [dbo].[Domicilio_Cierre] AS [Domicilio_Cierre]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Domicilio_Mix" EntityType="SqlGerenteModel.Store.Domicilio_Mix" store:Type="Tables" store:Schema="dbo" store:Name="Domicilio_Mix">
+      <DefiningQuery>SELECT 
+      [Domicilio_Mix].[Cod_domicilio_mix] AS [Cod_domicilio_mix], 
+      [Domicilio_Mix].[Cod_plu] AS [Cod_plu], 
+      [Domicilio_Mix].[Descripcion] AS [Descripcion], 
+      [Domicilio_Mix].[Cantidad] AS [Cantidad], 
+      [Domicilio_Mix].[Precio] AS [Precio], 
+      [Domicilio_Mix].[Fecha] AS [Fecha], 
+      [Domicilio_Mix].[Cod_Restaurante] AS [Cod_Restaurante]
+      FROM [dbo].[Domicilio_Mix] AS [Domicilio_Mix]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Empresa" EntityType="SqlGerenteModel.Store.Empresa" store:Type="Tables" store:Schema="dbo" store:Name="Empresa">
+      <DefiningQuery>SELECT 
+      [Empresa].[Cod_empresa] AS [Cod_empresa], 
+      [Empresa].[Estado] AS [Estado], 
+      [Empresa].[Ruc] AS [Ruc], 
+      [Empresa].[Nombre] AS [Nombre], 
+      [Empresa].[Fechainicio] AS [Fechainicio], 
+      [Empresa].[Fechafin] AS [Fechafin], 
+      [Empresa].[Cod_pais] AS [Cod_pais], 
+      [Empresa].[Ciudad] AS [Ciudad], 
+      [Empresa].[Direccion] AS [Direccion], 
+      [Empresa].[Razon_social] AS [Razon_social], 
+      [Empresa].[Telefono] AS [Telefono], 
+      [Empresa].[Tipo_contribuyente] AS [Tipo_contribuyente], 
+      [Empresa].[fecha_resolucion] AS [fecha_resolucion], 
+      [Empresa].[Certificado] AS [Certificado], 
+      [Empresa].[Pass_certificado] AS [Pass_certificado], 
+      [Empresa].[ObligadoContabilidad] AS [ObligadoContabilidad], 
+      [Empresa].[Cod_Tipo_Emision] AS [Cod_Tipo_Emision], 
+      [Empresa].[Cod_Tipo_Ambiente] AS [Cod_Tipo_Ambiente], 
+      [Empresa].[Numero_Resolucion] AS [Numero_Resolucion], 
+      [Empresa].[Resolucion] AS [Resolucion]
+      FROM [dbo].[Empresa] AS [Empresa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Empresas" EntityType="SqlGerenteModel.Store.Empresas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnvioCorreos" EntityType="SqlGerenteModel.Store.EnvioCorreos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Estados_Domicilio" EntityType="SqlGerenteModel.Store.Estados_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Factura_Anulacion" EntityType="SqlGerenteModel.Store.Factura_Anulacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Factura_Domicilio" EntityType="SqlGerenteModel.Store.Factura_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Factura_FormasPago" EntityType="SqlGerenteModel.Store.Factura_FormasPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormasPago" EntityType="SqlGerenteModel.Store.FormasPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GruposArt" EntityType="SqlGerenteModel.Store.GruposArt" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Impuestos" EntityType="SqlGerenteModel.Store.Impuestos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inmueble" EntityType="SqlGerenteModel.Store.Inmueble" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Log_Facturacion_Electronica" EntityType="SqlGerenteModel.Store.Log_Facturacion_Electronica" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Modificador" EntityType="SqlGerenteModel.Store.Modificador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Motorolos" EntityType="SqlGerenteModel.Store.Motorolos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NivelesPyG" EntityType="SqlGerenteModel.Store.NivelesPyG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Nota_Credito" EntityType="SqlGerenteModel.Store.Nota_Credito" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pais" EntityType="SqlGerenteModel.Store.Pais" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pantalla" EntityType="SqlGerenteModel.Store.Pantalla" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Paquete" EntityType="SqlGerenteModel.Store.Paquete" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Perfil" EntityType="SqlGerenteModel.Store.Perfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Periodo" EntityType="SqlGerenteModel.Store.Periodo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermisosPerfil" EntityType="SqlGerenteModel.Store.PermisosPerfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personal_Domicilio" EntityType="SqlGerenteModel.Store.Personal_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Plu_Promocion" EntityType="SqlGerenteModel.Store.Plu_Promocion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Plu_Sujeto" EntityType="SqlGerenteModel.Store.Plu_Sujeto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Plus" EntityType="SqlGerenteModel.Store.Plus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Precio_plu" EntityType="SqlGerenteModel.Store.Precio_plu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Promocion" EntityType="SqlGerenteModel.Store.Promocion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Proveedor" EntityType="SqlGerenteModel.Store.Proveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Provincia" EntityType="SqlGerenteModel.Store.Provincia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Recetas" EntityType="SqlGerenteModel.Store.Recetas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RecetaSugerencia" EntityType="SqlGerenteModel.Store.RecetaSugerencia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Region" EntityType="SqlGerenteModel.Store.Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Respuesta_Autorizacion_Comprobante" EntityType="SqlGerenteModel.Store.Respuesta_Autorizacion_Comprobante" store:Type="Tables" store:Schema="dbo" store:Name="Respuesta_Autorizacion_Comprobante">
+      <DefiningQuery>SELECT 
+      [Respuesta_Autorizacion_Comprobante].[rsp_claveAcceso] AS [rsp_claveAcceso], 
+      [Respuesta_Autorizacion_Comprobante].[rsp_estado_autorizacion] AS [rsp_estado_autorizacion], 
+      [Respuesta_Autorizacion_Comprobante].[rsp_autorizacion] AS [rsp_autorizacion], 
+      [Respuesta_Autorizacion_Comprobante].[rsp_ambiente] AS [rsp_ambiente], 
+      [Respuesta_Autorizacion_Comprobante].[rsp_fecha_autorizacion] AS [rsp_fecha_autorizacion]
+      FROM [dbo].[Respuesta_Autorizacion_Comprobante] AS [Respuesta_Autorizacion_Comprobante]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Respuesta_Recepcion_Comprobante" EntityType="SqlGerenteModel.Store.Respuesta_Recepcion_Comprobante" store:Type="Tables" store:Schema="dbo" store:Name="Respuesta_Recepcion_Comprobante">
+      <DefiningQuery>SELECT 
+      [Respuesta_Recepcion_Comprobante].[rcp_id] AS [rcp_id], 
+      [Respuesta_Recepcion_Comprobante].[rcp_clave_acceso] AS [rcp_clave_acceso], 
+      [Respuesta_Recepcion_Comprobante].[rcp_estado] AS [rcp_estado]
+      FROM [dbo].[Respuesta_Recepcion_Comprobante] AS [Respuesta_Recepcion_Comprobante]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Restaurante" EntityType="SqlGerenteModel.Store.Restaurante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rubros" EntityType="SqlGerenteModel.Store.Rubros" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Secuencia" EntityType="SqlGerenteModel.Store.Secuencia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Secuencia_Domicilio" EntityType="SqlGerenteModel.Store.Secuencia_Domicilio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubRecet" EntityType="SqlGerenteModel.Store.SubRecet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubRecetaTrans" EntityType="SqlGerenteModel.Store.SubRecetaTrans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SqlGerenteModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Telefono_Cliente" EntityType="SqlGerenteModel.Store.Telefono_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Telefonos" EntityType="SqlGerenteModel.Store.Telefonos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Accion_Domi" EntityType="SqlGerenteModel.Store.Tipo_Accion_Domi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Ambiente" EntityType="SqlGerenteModel.Store.Tipo_Ambiente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Comprobante" EntityType="SqlGerenteModel.Store.Tipo_Comprobante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Documento" EntityType="SqlGerenteModel.Store.Tipo_Documento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Emision" EntityType="SqlGerenteModel.Store.Tipo_Emision" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Facturacion" EntityType="SqlGerenteModel.Store.Tipo_Facturacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Inmueble" EntityType="SqlGerenteModel.Store.Tipo_Inmueble" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Modificador" EntityType="SqlGerenteModel.Store.Tipo_Modificador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Modificador_Plu" EntityType="SqlGerenteModel.Store.Tipo_Modificador_Plu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_Promocion" EntityType="SqlGerenteModel.Store.Tipo_Promocion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoCCC" EntityType="SqlGerenteModel.Store.TipoCCC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoFormaPago" EntityType="SqlGerenteModel.Store.TipoFormaPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoMov" EntityType="SqlGerenteModel.Store.TipoMov" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoRestaurante" EntityType="SqlGerenteModel.Store.TipoRestaurante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TiposCuenta" EntityType="SqlGerenteModel.Store.TiposCuenta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ubicacion" EntityType="SqlGerenteModel.Store.Ubicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UbicacionCadena" EntityType="SqlGerenteModel.Store.UbicacionCadena" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Unidades" EntityType="SqlGerenteModel.Store.Unidades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRestaurante" EntityType="SqlGerenteModel.Store.UserRestaurante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="SqlGerenteModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Zip" EntityType="SqlGerenteModel.Store.Zip" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Zip_Calle" EntityType="SqlGerenteModel.Store.Zip_Calle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Zip_Promocion" EntityType="SqlGerenteModel.Store.Zip_Promocion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Zona" EntityType="SqlGerenteModel.Store.Zona" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Articulos_GruposArt" Association="SqlGerenteModel.Store.FK_Articulos_GruposArt">
+      <End Role="GruposArt" EntitySet="GruposArt" />
+      <End Role="Articulos" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cadena_Pais" Association="SqlGerenteModel.Store.FK_Cadena_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Cadena" EntitySet="Cadena" />
+    </AssociationSet>
+    <AssociationSet Name="FK_clave_contingencia_Restaurante" Association="SqlGerenteModel.Store.FK_clave_contingencia_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="clave_contingencia" EntitySet="clave_contingencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Configuracion_Domicilio_Tipo_Facturacion" Association="SqlGerenteModel.Store.FK_Configuracion_Domicilio_Tipo_Facturacion">
+      <End Role="Tipo_Facturacion" EntitySet="Tipo_Facturacion" />
+      <End Role="Configuracion_Domicilio" EntitySet="Configuracion_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONVERT_REFERENCE_UNIDADES" Association="SqlGerenteModel.Store.FK_CONVERT_REFERENCE_UNIDADES">
+      <End Role="Unidades" EntitySet="Unidades" />
+      <End Role="Conversion" EntitySet="Conversion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Convert_Unidades" Association="SqlGerenteModel.Store.FK_Convert_Unidades">
+      <End Role="Unidades" EntitySet="Unidades" />
+      <End Role="Conversion" EntitySet="Conversion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Factura_Plu_Promocion" Association="SqlGerenteModel.Store.FK_Detalle_Factura_Plu_Promocion">
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+      <End Role="Detalle_Factura" EntitySet="Detalle_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Nota_Credito_Nota_Credito" Association="SqlGerenteModel.Store.FK_Detalle_Nota_Credito_Nota_Credito">
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+      <End Role="Detalle_Nota_Credito" EntitySet="Detalle_Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Detalle_Nota_Credito_Plu_Promocion" Association="SqlGerenteModel.Store.FK_Detalle_Nota_Credito_Plu_Promocion">
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+      <End Role="Detalle_Nota_Credito" EntitySet="Detalle_Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DinDomicilio_Motorolos" Association="SqlGerenteModel.Store.FK_DinDomicilio_Motorolos">
+      <End Role="Motorolos" EntitySet="Motorolos" />
+      <End Role="DinDomicilio" EntitySet="DinDomicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Cliente_Domicilio" Association="SqlGerenteModel.Store.FK_Factura_Domicilio_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Motorolos" Association="SqlGerenteModel.Store.FK_Factura_Domicilio_Motorolos">
+      <End Role="Motorolos" EntitySet="Motorolos" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Domicilio_Periodo" Association="SqlGerenteModel.Store.FK_Factura_Domicilio_Periodo">
+      <End Role="Periodo" EntitySet="Periodo" />
+      <End Role="Factura_Domicilio" EntitySet="Factura_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_FormasPago" Association="SqlGerenteModel.Store.FK_Factura_FormasPago">
+      <End Role="FormasPago" EntitySet="FormasPago" />
+      <End Role="Factura_FormasPago" EntitySet="Factura_FormasPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormasPago_TipoFormaPago" Association="SqlGerenteModel.Store.FK_FormasPago_TipoFormaPago">
+      <End Role="TipoFormaPago" EntitySet="TipoFormaPago" />
+      <End Role="FormasPago" EntitySet="FormasPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Motorolos_Restaurante" Association="SqlGerenteModel.Store.FK_Motorolos_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Motorolos" EntitySet="Motorolos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NivelesPyG_NivelesPyG1" Association="SqlGerenteModel.Store.FK_NivelesPyG_NivelesPyG1">
+      <End Role="NivelesPyG" EntitySet="NivelesPyG" />
+      <End Role="NivelesPyG1" EntitySet="NivelesPyG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Cliente_Domicilio" Association="SqlGerenteModel.Store.FK_Nota_Credito_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Domicilio_Periodo" Association="SqlGerenteModel.Store.FK_Nota_Credito_Domicilio_Periodo">
+      <End Role="Periodo" EntitySet="Periodo" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nota_Credito_Tipo_Comprobante" Association="SqlGerenteModel.Store.FK_Nota_Credito_Tipo_Comprobante">
+      <End Role="Tipo_Comprobante" EntitySet="Tipo_Comprobante" />
+      <End Role="Nota_Credito" EntitySet="Nota_Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Periodo_Restaurante" Association="SqlGerenteModel.Store.FK_Periodo_Restaurante">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Periodo" EntitySet="Periodo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Referencia_Promocion_Promociones" Association="SqlGerenteModel.Store.FK_Referencia_Promocion_Promociones">
+      <End Role="Promocion" EntitySet="Promocion" />
+      <End Role="Plu_Promocion" EntitySet="Plu_Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGION_REFERENCE_PAIS" Association="SqlGerenteModel.Store.FK_REGION_REFERENCE_PAIS">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Region" EntitySet="Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RUBROS_REFERENCE_NIVELESP" Association="SqlGerenteModel.Store.FK_RUBROS_REFERENCE_NIVELESP">
+      <End Role="NivelesPyG" EntitySet="NivelesPyG" />
+      <End Role="Rubros" EntitySet="Rubros" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SECUENCI_RLSH_87_RESTAURA" Association="SqlGerenteModel.Store.FK_SECUENCI_RLSH_87_RESTAURA">
+      <End Role="Restaurante" EntitySet="Restaurante" />
+      <End Role="Secuencia" EntitySet="Secuencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Secuencia_Domicilio_Tipo_Accion_Domi" Association="SqlGerenteModel.Store.FK_Secuencia_Domicilio_Tipo_Accion_Domi">
+      <End Role="Tipo_Accion_Domi" EntitySet="Tipo_Accion_Domi" />
+      <End Role="Secuencia_Domicilio" EntitySet="Secuencia_Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Secuencia_TipoMov1" Association="SqlGerenteModel.Store.FK_Secuencia_TipoMov1">
+      <End Role="TipoMov" EntitySet="TipoMov" />
+      <End Role="Secuencia" EntitySet="Secuencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefono_Cliente_Cliente_Domicilio" Association="SqlGerenteModel.Store.FK_Telefono_Cliente_Cliente_Domicilio">
+      <End Role="Cliente_Domicilio" EntitySet="Cliente_Domicilio" />
+      <End Role="Telefono_Cliente" EntitySet="Telefono_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefonos_Inmueble" Association="SqlGerenteModel.Store.FK_Telefonos_Inmueble">
+      <End Role="Inmueble" EntitySet="Inmueble" />
+      <End Role="Telefonos" EntitySet="Telefonos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="Cod_Acceso" />
+    </Key>
+    <Property Name="Cod_Acceso" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Nombre" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="Cod_Area" />
+    </Key>
+    <Property Name="Cod_Area" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Articulos">
+    <Key>
+      <PropertyRef Name="Cod_Articulo" />
+    </Key>
+    <Property Name="Cod_Articulo" Type="char" Nullable="false" MaxLength="12" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Cod_GrupoArt" Type="char" MaxLength="12" />
+    <Property Name="Unidad_Compra" Type="char" MaxLength="12" />
+    <Property Name="Unidad_Inventario" Type="char" MaxLength="12" />
+    <Property Name="Unidad_Receta" Type="char" MaxLength="12" />
+    <Property Name="CostoCompra_UIO" Type="float" />
+    <Property Name="CostoCompra_GYE" Type="float" />
+    <Property Name="CostoCompra_BOD" Type="float" />
+    <Property Name="CostoInventario_UIO" Type="float" />
+    <Property Name="CostoInventario_GYE" Type="float" />
+    <Property Name="CostoInventario_BOD" Type="float" />
+    <Property Name="CostoReceta_UIO" Type="float" />
+    <Property Name="CostoReceta_GYE" Type="float" />
+    <Property Name="CostoReceta_BOD" Type="float" />
+    <Property Name="GrupoDespacho" Type="varchar" MaxLength="50" />
+    <Property Name="ImpuestoV" Type="varchar" MaxLength="12" />
+    <Property Name="Impuesto" Type="varchar" MaxLength="12" />
+    <Property Name="ABR_Bajar" Type="varchar" MaxLength="15" />
+    <Property Name="Convert_INV" Type="float" />
+    <Property Name="Convert_REC" Type="float" />
+  </EntityType>
+  <EntityType Name="Cadena">
+    <Key>
+      <PropertyRef Name="Cod_Cadena" />
+    </Key>
+    <Property Name="Cod_Cadena" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cliente" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="Compania" Type="char" MaxLength="4" />
+    <Property Name="ABR" Type="char" MaxLength="3" />
+    <Property Name="Letra_Cadena" Type="char" MaxLength="1" />
+    <Property Name="Dimension" Type="char" MaxLength="3" />
+    <Property Name="Dimension_Planta" Type="varchar" MaxLength="20" />
+    <Property Name="Porcen_Canjes" Type="float" />
+    <Property Name="Tipo_Regalia" Type="int" />
+    <Property Name="Monedas_Tevcol" Type="int" />
+    <Property Name="Tipo_Impuesto" Type="char" MaxLength="12" />
+    <Property Name="Logo" Type="varchar" MaxLength="50" />
+    <Property Name="DestinoAX" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Pais" Type="int" />
+    <Property Name="Plus_Domicilio" Type="int" />
+    <Property Name="Tolerancia" Type="int" />
+    <Property Name="Stock_Inventario" Type="bit" />
+    <Property Name="Inicial_Cadena" Type="varchar" MaxLength="4" />
+    <Property Name="DepositoPixel" Type="int" />
+    <Property Name="Nombre_Comercial" Type="varchar" MaxLength="200" />
+    <Property Name="Cod_empresa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Calle">
+    <Key>
+      <PropertyRef Name="Cod_Calle" />
+    </Key>
+    <Property Name="Cod_Calle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="Cod_Ciudad" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Calle_Restaurante">
+    <Key>
+      <PropertyRef Name="Cod_Calle" />
+      <PropertyRef Name="Cod_Area" />
+    </Key>
+    <Property Name="Cod_Calle" Type="int" Nullable="false" />
+    <Property Name="Cod_Area" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Calles_Back' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Calles_Back">
+    <Key>
+      <PropertyRef Name="Cod_Calle_Back" />
+    </Key>
+    <Property Name="Cod_Calle_Back" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="Cod_Categoria" />
+    </Key>
+    <Property Name="Cod_Categoria" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="ABR" Type="char" MaxLength="3" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="Cod_Ciudad" />
+    </Key>
+    <Property Name="Cod_Ciudad" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Provincia" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Prefijo" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Clasificacion">
+    <Key>
+      <PropertyRef Name="Cod_Clasificacion" />
+    </Key>
+    <Property Name="Cod_Clasificacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="clave_contingencia">
+    <Key>
+      <PropertyRef Name="Clave_Contingencia" />
+    </Key>
+    <Property Name="Clave_Contingencia" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Fecha_Carga" Type="datetime" />
+    <Property Name="Fecha_Uso" Type="datetime" />
+    <Property Name="Cod_Movimiento" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Cliente_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Cliente_Domicilio" />
+    </Key>
+    <Property Name="Cod_Cliente_Domicilio" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Ruc_Cedula" Type="varchar" MaxLength="20" />
+    <Property Name="Nombres" Type="varchar" MaxLength="50" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Ext" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Tipo_Documento" Type="int" />
+  </EntityType>
+  <EntityType Name="ClientesAx">
+    <Key>
+      <PropertyRef Name="Cod_Cliente" />
+    </Key>
+    <Property Name="Cod_Cliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoAX" Type="char" MaxLength="10" />
+    <Property Name="RUC" Type="char" MaxLength="13" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" />
+    <Property Name="Direccion" Type="varchar" MaxLength="250" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+    <Property Name="Pais" Type="varchar" MaxLength="10" />
+    <Property Name="Grupo" Type="char" MaxLength="20" />
+    <Property Name="ModoPago" Type="char" MaxLength="4" />
+    <Property Name="TipoCliente" Type="int" />
+    <Property Name="NombreInterfaz" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Compania">
+    <Key>
+      <PropertyRef Name="Cod_Compania" />
+    </Key>
+    <Property Name="Cod_Compania" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Config_RecetaSugerencia">
+    <Key>
+      <PropertyRef Name="Cod_Plu" />
+    </Key>
+    <Property Name="Cod_Plu" Type="int" Nullable="false" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Configuracion_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Configuracion" />
+    </Key>
+    <Property Name="Cod_Configuracion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Conex_BD" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Menu" Type="int" />
+    <Property Name="Orden_Seleccion" Type="varchar" MaxLength="6" />
+    <Property Name="Recargo" Type="int" />
+    <Property Name="Impresion" Type="int" />
+    <Property Name="Tiempo_Espera" Type="int" />
+    <Property Name="Archivo_Impresion" Type="varchar" MaxLength="50" />
+    <Property Name="Numero_Impresiones" Type="int" />
+    <Property Name="Call_Center" Type="int" />
+    <Property Name="Num_Lineas" Type="int" />
+    <Property Name="Num_Comandas" Type="int" />
+    <Property Name="Tiempo_Retorno" Type="int" />
+    <Property Name="Seguridad" Type="int" />
+    <Property Name="Transferencia" Type="int" />
+    <Property Name="Tiempo_Entrega" Type="int" />
+    <Property Name="Tiempo_Recepcion" Type="int" />
+    <Property Name="Credito" Type="int" />
+    <Property Name="Tiempo_RRetorno" Type="int" />
+    <Property Name="Tipo_Facturacion" Type="int" />
+    <Property Name="Cod_Local" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Conversion">
+    <Key>
+      <PropertyRef Name="Cod_Conversion" />
+    </Key>
+    <Property Name="Cod_Conversion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Desde" Type="varchar" MaxLength="12" />
+    <Property Name="Hasta" Type="varchar" MaxLength="12" />
+    <Property Name="Factor_Conversion" Type="float" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="DeptoPlus">
+    <Key>
+      <PropertyRef Name="Cod_DeptoPlu" />
+    </Key>
+    <Property Name="Cod_DeptoPlu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Num_Depto" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Descuentos_Cadena">
+    <Key>
+      <PropertyRef Name="Cod_Descuento_Cadena" />
+    </Key>
+    <Property Name="Cod_Descuento_Cadena" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Maximo" Type="int" />
+    <Property Name="Minimo" Type="int" />
+    <Property Name="Intervalo" Type="int" />
+    <Property Name="Tipo" Type="int" />
+  </EntityType>
+  <EntityType Name="Detalle_Factura">
+    <Key>
+      <PropertyRef Name="Cod_Detalle_Factura" />
+    </Key>
+    <Property Name="Cod_Detalle_Factura" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Cod_Factura" Type="varchar" MaxLength="30" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Cod_Plu_Promocion" Type="int" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Precio" Type="float" />
+    <Property Name="Iva" Type="float" />
+    <Property Name="Costo" Type="float" />
+    <Property Name="Orden" Type="int" />
+    <Property Name="Descuento" Type="float" />
+    <Property Name="Descuento_con_Impuesto" Type="float" />
+  </EntityType>
+  <EntityType Name="Detalle_Nota_Credito">
+    <Key>
+      <PropertyRef Name="Cod_Detalle_Nota_Credito" />
+    </Key>
+    <Property Name="Cod_Detalle_Nota_Credito" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Cod_Nota_Credito" Type="varchar" MaxLength="30" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Cod_Plu_Promocion" Type="int" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Precio" Type="float" />
+    <Property Name="Iva" Type="float" />
+    <Property Name="Costo" Type="float" />
+    <Property Name="Orden" Type="float" />
+    <Property Name="Descuento" Type="float" />
+    <Property Name="Descuento_con_Impuesto" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.DinDomicilio' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DinDomicilio">
+    <Key>
+      <PropertyRef Name="Cod_DinDomicilio" />
+      <PropertyRef Name="Cod_Motorolo" />
+    </Key>
+    <Property Name="Cod_DinDomicilio" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Cod_Motorolo" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Hora" Type="varchar" MaxLength="11" />
+    <Property Name="Base_caja" Type="float" />
+    <Property Name="Num_Efectivo" Type="int" />
+    <Property Name="Num_cheques" Type="int" />
+    <Property Name="Num_tarjetas_credito" Type="int" />
+    <Property Name="Val_Efectivo" Type="float" />
+    <Property Name="Val_cheques" Type="float" />
+    <Property Name="Val_tarjetas_credito" Type="float" />
+    <Property Name="Comandas_extra" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Domicilio_Cierre' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Domicilio_Cierre">
+    <Key>
+      <PropertyRef Name="Cod_domicilio_cierre" />
+    </Key>
+    <Property Name="Cod_domicilio_cierre" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Forma_pago" Type="char" MaxLength="20" />
+    <Property Name="Total" Type="float" />
+    <Property Name="Fecha" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Domicilio_Mix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Domicilio_Mix">
+    <Key>
+      <PropertyRef Name="Cod_domicilio_mix" />
+    </Key>
+    <Property Name="Cod_domicilio_mix" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_plu" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Precio" Type="float" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Cod_Restaurante" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Empresa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Ruc" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Direccion" />
+      <PropertyRef Name="Razon_social" />
+      <PropertyRef Name="Telefono" />
+      <PropertyRef Name="Certificado" />
+      <PropertyRef Name="Pass_certificado" />
+      <PropertyRef Name="ObligadoContabilidad" />
+      <PropertyRef Name="Cod_Tipo_Emision" />
+      <PropertyRef Name="Cod_Tipo_Ambiente" />
+      <PropertyRef Name="Numero_Resolucion" />
+    </Key>
+    <Property Name="Cod_empresa" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Ruc" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Fechainicio" Type="datetime" />
+    <Property Name="Fechafin" Type="datetime" />
+    <Property Name="Cod_pais" Type="int" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Razon_social" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Telefono" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Tipo_contribuyente" Type="varchar" MaxLength="30" />
+    <Property Name="fecha_resolucion" Type="datetime" />
+    <Property Name="Certificado" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Pass_certificado" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ObligadoContabilidad" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Cod_Tipo_Emision" Type="int" Nullable="false" />
+    <Property Name="Cod_Tipo_Ambiente" Type="int" Nullable="false" />
+    <Property Name="Numero_Resolucion" Type="int" Nullable="false" />
+    <Property Name="Resolucion" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="Cod_empresa" />
+    </Key>
+    <Property Name="Cod_empresa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Ruc" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Fechainicio" Type="datetime" />
+    <Property Name="Fechafin" Type="datetime" />
+    <Property Name="Cod_pais" Type="int" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Razon_social" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Telefono" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Tipo_contribuyente" Type="varchar" MaxLength="30" />
+    <Property Name="fecha_resolucion" Type="datetime" />
+    <Property Name="Certificado" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Pass_certificado" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ObligadoContabilidad" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Cod_Tipo_Emision" Type="int" Nullable="false" />
+    <Property Name="Cod_Tipo_Ambiente" Type="int" Nullable="false" />
+    <Property Name="Numero_Resolucion" Type="int" Nullable="false" />
+    <Property Name="Resolucion" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="EnvioCorreos">
+    <Key>
+      <PropertyRef Name="Cod_Envio" />
+    </Key>
+    <Property Name="Cod_Envio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Mail" Type="varchar" MaxLength="4000" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Estados_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Estado" />
+    </Key>
+    <Property Name="Cod_Estado" Type="int" Nullable="false" />
+    <Property Name="Factura" Type="varchar" MaxLength="50" />
+    <Property Name="Asignacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Factura_Anulacion">
+    <Key>
+      <PropertyRef Name="Cod_Factura" />
+    </Key>
+    <Property Name="Cod_Factura" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_Motivo" Type="int" />
+    <Property Name="Cod_Administrador" Type="int" />
+    <Property Name="Cod_Motorolo" Type="int" />
+    <Property Name="Observacion" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Factura_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Factura" />
+    </Key>
+    <Property Name="Cod_Factura" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cod_Cliente_Domicilio" Type="varchar" MaxLength="30" />
+    <Property Name="Cod_Periodo" Type="varchar" MaxLength="12" />
+    <Property Name="Cod_Usuario" Type="int" />
+    <Property Name="Cod_Administrador" Type="int" />
+    <Property Name="Cod_Motorolo" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Comentario" Type="varchar" MaxLength="250" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Consumidor_Final" Type="int" />
+    <Property Name="Cod_Telefono" Type="int" />
+    <Property Name="Transferencia" Type="int" />
+    <Property Name="Fecha_Creacion" Type="datetime" />
+    <Property Name="DescuentoIVA" Type="float" />
+    <Property Name="DescuentoNoIVA" Type="float" />
+    <Property Name="Estado_Transferencia" Type="int" />
+    <Property Name="Direccion_Alterna" Type="varchar" MaxLength="250" />
+    <Property Name="Porcentaje" Type="float" />
+    <Property Name="Cod_Usuario_Descto" Type="int" />
+    <Property Name="Propina" Type="float" />
+    <Property Name="Cod_Nota_Credito" Type="varchar" MaxLength="30" />
+    <Property Name="Tipo_Facturacion" Type="int" />
+    <Property Name="Cod_Tipo_Comprobante" Type="int" />
+    <Property Name="Clave_Acceso" Type="varchar" MaxLength="50" />
+    <Property Name="Numero_Factura" Type="varchar" MaxLength="50" />
+    <Property Name="Autorizado" Type="int" />
+    <Property Name="Datos_Adicionales" Type="varchar" MaxLength="4000" />
+    <Property Name="FechaOperacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Factura_FormasPago">
+    <Key>
+      <PropertyRef Name="Cod_FFormasPago" />
+    </Key>
+    <Property Name="Cod_FFormasPago" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Factura" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_FormaPago" Type="int" Nullable="false" />
+    <Property Name="Num_Tarjeta" Type="varchar" MaxLength="25" />
+    <Property Name="Num_Seguridad" Type="varchar" MaxLength="100" />
+    <Property Name="Fecha_Caducidad" Type="varchar" MaxLength="11" />
+    <Property Name="Billete" Type="float" />
+    <Property Name="NumeroCheque" Type="varchar" MaxLength="50" />
+    <Property Name="Banco" Type="varchar" MaxLength="50" />
+    <Property Name="Titular" Type="varchar" MaxLength="100" />
+    <Property Name="Referencia_Billete" Type="varchar" MaxLength="50" />
+    <Property Name="Valor_Billete" Type="float" />
+    <Property Name="Total_Pagar" Type="float" />
+    <Property Name="Propina" Type="float" />
+    <Property Name="ClienteAx" Type="int" />
+  </EntityType>
+  <EntityType Name="FormasPago">
+    <Key>
+      <PropertyRef Name="Cod_FormaPago" />
+    </Key>
+    <Property Name="Cod_FormaPago" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_TipoF" Type="int" />
+    <Property Name="Desglose" Type="int" />
+  </EntityType>
+  <EntityType Name="GruposArt">
+    <Key>
+      <PropertyRef Name="Cod_GrupoArt" />
+    </Key>
+    <Property Name="Cod_GrupoArt" Type="char" Nullable="false" MaxLength="12" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Impuestos">
+    <Key>
+      <PropertyRef Name="Cod_Impuesto" />
+    </Key>
+    <Property Name="Cod_Impuesto" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Porcentaje" Type="float" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Inmueble">
+    <Key>
+      <PropertyRef Name="Cod_Inmueble" />
+    </Key>
+    <Property Name="Cod_Inmueble" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_Tipo_Inmueble" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="450" />
+    <Property Name="Cod_Calle1" Type="int" />
+    <Property Name="Cod_Calle2" Type="int" />
+    <Property Name="Cod_ZipCode" Type="varchar" MaxLength="12" />
+    <Property Name="Num_Direccion" Type="varchar" MaxLength="12" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Calle_Back1" Type="int" />
+    <Property Name="Cod_Calle_Back2" Type="int" />
+  </EntityType>
+  <EntityType Name="Log_Facturacion_Electronica">
+    <Key>
+      <PropertyRef Name="lg_id" />
+    </Key>
+    <Property Name="lg_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="lg_clave_acceso" Type="varchar" MaxLength="50" />
+    <Property Name="lg_estado" Type="varchar" MaxLength="50" />
+    <Property Name="lg_mensaje" Type="varchar" MaxLength="150" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cod_factura" Type="varchar" MaxLength="30" />
+    <Property Name="lg_fecha" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Modificador">
+    <Key>
+      <PropertyRef Name="Cod_Modificador" />
+    </Key>
+    <Property Name="Cod_Modificador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Modificador" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Motorolos">
+    <Key>
+      <PropertyRef Name="Cod_Motorolo" />
+    </Key>
+    <Property Name="Cod_Motorolo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Compania" Type="int" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Nombres" Type="varchar" MaxLength="50" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="Cod_Tarjeta" Type="varchar" MaxLength="20" />
+    <Property Name="Cod_Nomina" Type="varchar" MaxLength="6" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Telefono" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="NivelesPyG">
+    <Key>
+      <PropertyRef Name="Cod_Grupo" />
+    </Key>
+    <Property Name="Cod_Grupo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Padre" Type="int" />
+    <Property Name="Tipo" Type="int" />
+    <Property Name="OrdenImpresion" Type="int" />
+    <Property Name="Operador" Type="int" />
+    <Property Name="Nivel" Type="int" />
+  </EntityType>
+  <EntityType Name="Nota_Credito">
+    <Key>
+      <PropertyRef Name="Cod_Nota_Credito" />
+    </Key>
+    <Property Name="Cod_Nota_Credito" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cod_Cliente_Domicilio" Type="varchar" MaxLength="30" />
+    <Property Name="Cod_Periodo" Type="varchar" MaxLength="12" />
+    <Property Name="Cod_Usuario" Type="int" />
+    <Property Name="Cod_Administrador" Type="int" />
+    <Property Name="Estado_Transferencia" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Comentario" Type="varchar" MaxLength="250" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Consumidor_Final" Type="int" />
+    <Property Name="Cod_Telefono" Type="int" />
+    <Property Name="Transferencia" Type="int" />
+    <Property Name="Fecha_Creacion" Type="datetime" />
+    <Property Name="DescuentoIVA" Type="float" />
+    <Property Name="DescuentoNoIVA" Type="float" />
+    <Property Name="Direccion_Alterna" Type="varchar" MaxLength="250" />
+    <Property Name="Porcentaje" Type="float" />
+    <Property Name="Cod_Usuario_Descto" Type="int" />
+    <Property Name="Propina" Type="float" />
+    <Property Name="Clave_Acceso" Type="varchar" MaxLength="50" />
+    <Property Name="Tipo_Facturacion" Type="int" />
+    <Property Name="Cod_Tipo_Comprobante" Type="int" />
+    <Property Name="Autorizado" Type="int" />
+    <Property Name="Descuento" Type="float" />
+    <Property Name="FechaOperacion" Type="datetime" Nullable="false" />
+    <Property Name="Datos_Adicionales" Type="varchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="Cod_Pais" />
+    </Key>
+    <Property Name="Cod_Pais" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="Moneda" Type="char" MaxLength="3" />
+    <Property Name="Tipo_Cambio" Type="float" />
+    <Property Name="Grupo_Impuestos" Type="char" MaxLength="3" />
+    <Property Name="Diferencia_Cierre" Type="float" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="SO" Type="varchar" MaxLength="10" />
+    <Property Name="Valor_Inventario" Type="int" />
+    <Property Name="Monto_Factura" Type="float" />
+  </EntityType>
+  <EntityType Name="Pantalla">
+    <Key>
+      <PropertyRef Name="Cod_Pantalla" />
+    </Key>
+    <Property Name="Cod_Pantalla" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Mostrar" Type="char" MaxLength="100" />
+    <Property Name="Nombre_Formulario" Type="char" MaxLength="50" />
+    <Property Name="Descripcion" Type="char" MaxLength="50" />
+    <Property Name="Orden_Menu" Type="float" Nullable="false" />
+    <Property Name="Nivel" Type="int" />
+    <Property Name="Ruta" Type="char" MaxLength="200" />
+    <Property Name="Imagen" Type="char" MaxLength="200" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Ecuador" Type="char" MaxLength="100" />
+    <Property Name="Venezuela" Type="char" MaxLength="100" />
+    <Property Name="Colombia" Type="char" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Paquete">
+    <Key>
+      <PropertyRef Name="Cod_Paquete" />
+    </Key>
+    <Property Name="Cod_Paquete" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Fecha_Caducidad" Type="datetime" />
+    <Property Name="Estado" Type="nchar" MaxLength="10" />
+    <Property Name="Cod_Restaurante" Type="int" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="Cod_Perfil" />
+    </Key>
+    <Property Name="Cod_Perfil" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Periodo">
+    <Key>
+      <PropertyRef Name="Cod_Periodo" />
+    </Key>
+    <Property Name="Cod_Periodo" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Inicial" Type="varchar" MaxLength="10" />
+    <Property Name="Final" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PermisosPerfil">
+    <Key>
+      <PropertyRef Name="Cod_Acceso" />
+      <PropertyRef Name="Cod_Perfil" />
+      <PropertyRef Name="Cod_Pantalla" />
+    </Key>
+    <Property Name="Cod_Acceso" Type="int" Nullable="false" />
+    <Property Name="Cod_Perfil" Type="int" Nullable="false" />
+    <Property Name="Cod_Pantalla" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personal_Domicilio">
+    <Key>
+      <PropertyRef Name="Cedula" />
+    </Key>
+    <Property Name="Cedula" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="Nombres" Type="varchar" MaxLength="50" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha_Ingreso" Type="datetime" />
+    <Property Name="Tipo_Empleado" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Cadena" Type="int" />
+  </EntityType>
+  <EntityType Name="Plu_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Plu_Promocion" />
+    </Key>
+    <Property Name="Cod_Plu" Type="int" Nullable="false" />
+    <Property Name="Cod_Promocion" Type="int" Nullable="false" />
+    <Property Name="Cod_Plu_Promocion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Plu_Sujeto">
+    <Key>
+      <PropertyRef Name="Cod_Plu_Promocion" />
+      <PropertyRef Name="Cod_Plu" />
+    </Key>
+    <Property Name="Cod_Plu_Promocion" Type="int" Nullable="false" />
+    <Property Name="Cod_Plu" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Plus">
+    <Key>
+      <PropertyRef Name="Cod_Plu" />
+      <PropertyRef Name="Cod_Cadena" />
+      <PropertyRef Name="Num_Plu" />
+    </Key>
+    <Property Name="Cod_Plu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" Nullable="false" />
+    <Property Name="Cod_DeptoPlu" Type="int" />
+    <Property Name="Cod_Multiple" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Num_Plu" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Clasificacion" Type="int" />
+    <Property Name="Impuesto" Type="int" />
+  </EntityType>
+  <EntityType Name="Precio_plu">
+    <Key>
+      <PropertyRef Name="Cod_Precio_plu" />
+    </Key>
+    <Property Name="Cod_Precio_plu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Categoria" Type="int" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Valor_Neto" Type="float" />
+    <Property Name="Valor_Iva" Type="float" />
+    <Property Name="Pvp" Type="float" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Promocion" />
+    </Key>
+    <Property Name="Cod_Promocion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Promocion" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="Total" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Fecha_Caducidad" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="Cod_Proveedor" />
+    </Key>
+    <Property Name="Cod_Proveedor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoAX" Type="varchar" MaxLength="10" />
+    <Property Name="Cod_Tienda" Type="varchar" MaxLength="4" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" />
+    <Property Name="Ruc" Type="char" MaxLength="13" />
+    <Property Name="Direccion" Type="varchar" MaxLength="250" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+    <Property Name="Pais" Type="varchar" MaxLength="20" />
+    <Property Name="Provincia" Type="varchar" MaxLength="20" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="20" />
+    <Property Name="CuentaBanco" Type="varchar" MaxLength="20" />
+    <Property Name="ModoPago" Type="varchar" MaxLength="4" />
+    <Property Name="GrupoProveedor" Type="char" MaxLength="10" />
+    <Property Name="TerminoPago" Type="char" MaxLength="3" />
+    <Property Name="Moneda" Type="varchar" MaxLength="10" />
+    <Property Name="LineaProveedor" Type="varchar" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="40" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Planta" Type="int" />
+    <Property Name="Compras" Type="int" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="Cod_Provincia" />
+    </Key>
+    <Property Name="Cod_Provincia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Region" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Recetas">
+    <Key>
+      <PropertyRef Name="Cod_Receta" />
+    </Key>
+    <Property Name="Cod_Receta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Cod_Subrecet" Type="int" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="int" Nullable="false" />
+    <Property Name="Cod_Articulo" Type="char" MaxLength="12" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="RecetaSugerencia">
+    <Key>
+      <PropertyRef Name="Cod_RecetaSugerencia" />
+    </Key>
+    <Property Name="Cod_RecetaSugerencia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Cod_Subrecet" Type="int" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="int" />
+    <Property Name="Cod_Articulo" Type="char" MaxLength="12" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="Cod_Region" />
+    </Key>
+    <Property Name="Cod_Region" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Pais" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="ABR" Type="varchar" MaxLength="5" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Respuesta_Autorizacion_Comprobante' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Respuesta_Autorizacion_Comprobante">
+    <Key>
+      <PropertyRef Name="rsp_claveAcceso" />
+    </Key>
+    <Property Name="rsp_claveAcceso" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="rsp_estado_autorizacion" Type="varchar" MaxLength="20" />
+    <Property Name="rsp_autorizacion" Type="varchar" MaxLength="50" />
+    <Property Name="rsp_ambiente" Type="varchar" MaxLength="20" />
+    <Property Name="rsp_fecha_autorizacion" Type="varchar" MaxLength="35" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SqlGerente.dbo.Respuesta_Recepcion_Comprobante' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Respuesta_Recepcion_Comprobante">
+    <Key>
+      <PropertyRef Name="rcp_id" />
+    </Key>
+    <Property Name="rcp_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="rcp_clave_acceso" Type="varchar" MaxLength="50" />
+    <Property Name="rcp_estado" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Restaurante">
+    <Key>
+      <PropertyRef Name="Cod_Restaurante" />
+    </Key>
+    <Property Name="Cod_Restaurante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Cod_Ciudad" Type="int" />
+    <Property Name="Cod_Categoria" Type="int" />
+    <Property Name="Cod_Registradora" Type="int" />
+    <Property Name="Cod_TipoRestaurante" Type="int" />
+    <Property Name="Cod_Tienda" Type="char" MaxLength="4" />
+    <Property Name="Nombre_ODBC" Type="varchar" MaxLength="50" />
+    <Property Name="Planta" Type="varchar" MaxLength="15" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="80" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" />
+    <Property Name="Dimension_AX" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Numero_Luch" Type="int" />
+    <Property Name="Filtro_Articulos" Type="char" MaxLength="2" />
+    <Property Name="Fisica_Dias" Type="int" />
+    <Property Name="PYG_Dias" Type="int" />
+    <Property Name="Servicio" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Ubicacion_Cadenas" Type="int" />
+    <Property Name="Domicilio" Type="int" />
+    <Property Name="Correo" Type="varchar" MaxLength="150" />
+    <Property Name="Gerente_Local" Type="varchar" MaxLength="100" />
+    <Property Name="Fecha_Apertura" Type="datetime" />
+    <Property Name="Fecha_Cierre" Type="datetime" />
+    <Property Name="Codigo_SRI" Type="char" MaxLength="3" />
+    <Property Name="Tamano" Type="varchar" MaxLength="50" />
+    <Property Name="Localizacion" Type="varchar" MaxLength="15" />
+    <Property Name="Costeo" Type="int" />
+    <Property Name="Autoimpresor" Type="int" />
+    <Property Name="SwitchT" Type="varchar" MaxLength="50" />
+    <Property Name="Cupon_Automatico" Type="int" />
+    <Property Name="Prefijo" Type="varchar" MaxLength="4" />
+    <Property Name="Desde" Type="int" />
+    <Property Name="Hasta" Type="int" />
+    <Property Name="Resolucion" Type="bigint" />
+    <Property Name="Fecha_Resolucion" Type="datetime" />
+    <Property Name="CentroCostoPLT" Type="varchar" MaxLength="10" />
+    <Property Name="Celular" Type="varchar" MaxLength="15" />
+    <Property Name="Num_Establec_SRI" Type="varchar" MaxLength="5" />
+    <Property Name="Sitio" Type="varchar" MaxLength="10" />
+    <Property Name="PedidoSugerido" Type="int" />
+    <Property Name="Tipo_Nomina" Type="smallint" />
+    <Property Name="serie" Type="char" MaxLength="3" />
+    <Property Name="PuntoEmision" Type="char" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="Rubros">
+    <Key>
+      <PropertyRef Name="Cod_Rubros" />
+    </Key>
+    <Property Name="Cod_Rubros" Type="char" Nullable="false" MaxLength="12" />
+    <Property Name="Cod_Grupo" Type="int" />
+    <Property Name="Cta_Axapta" Type="char" MaxLength="13" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Tipo" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="OrdenPyG" Type="int" />
+  </EntityType>
+  <EntityType Name="Secuencia">
+    <Key>
+      <PropertyRef Name="Cod_Secuencia" />
+    </Key>
+    <Property Name="Cod_Secuencia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cod_Movimiento" Type="int" />
+    <Property Name="Num_Codigo" Type="int" />
+  </EntityType>
+  <EntityType Name="Secuencia_Domicilio">
+    <Key>
+      <PropertyRef Name="Cod_Domi_Secuencia" />
+    </Key>
+    <Property Name="Cod_Domi_Secuencia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Restaurante" Type="int" />
+    <Property Name="Cod_Accion_Domi" Type="int" />
+    <Property Name="Numero" Type="int" />
+  </EntityType>
+  <EntityType Name="SubRecet">
+    <Key>
+      <PropertyRef Name="Cod_Subrecet" />
+    </Key>
+    <Property Name="Cod_Subrecet" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Tipo_Subreceta" Type="char" MaxLength="12" />
+    <Property Name="Costo" Type="float" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Num_Subreceta" Type="varchar" MaxLength="12" />
+    <Property Name="Unidad_Receta" Type="char" MaxLength="12" />
+    <Property Name="Unidad_Compra" Type="char" MaxLength="12" />
+    <Property Name="Unidad_Inventario" Type="char" MaxLength="12" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="SubRecetaTrans">
+    <Key>
+      <PropertyRef Name="Cod_SubReceta_Trans" />
+    </Key>
+    <Property Name="Cod_SubReceta_Trans" Type="int" Nullable="false" />
+    <Property Name="Cod_Subrecet" Type="int" />
+    <Property Name="Cod_Articulo" Type="char" MaxLength="12" />
+    <Property Name="Cod_Articulo_Sub" Type="int" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="NumSubreceta" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Telefono_Cliente">
+    <Key>
+      <PropertyRef Name="Cod_Cliente_Domicilio" />
+      <PropertyRef Name="Cod_Telefono" />
+    </Key>
+    <Property Name="Cod_Cliente_Domicilio" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Cod_Telefono" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Telefonos">
+    <Key>
+      <PropertyRef Name="Cod_Telefono" />
+      <PropertyRef Name="Cod_Ciudad" />
+    </Key>
+    <Property Name="Cod_Telefono" Type="int" Nullable="false" />
+    <Property Name="Cod_Inmueble" Type="varchar" MaxLength="30" />
+    <Property Name="Tipo" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Ciudad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tipo_Accion_Domi">
+    <Key>
+      <PropertyRef Name="Cod_Accion_Domi" />
+    </Key>
+    <Property Name="Cod_Accion_Domi" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="30" />
+    <Property Name="Inicial" Type="varchar" MaxLength="1" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipo_Ambiente">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Ambiente" />
+    </Key>
+    <Property Name="Cod_Tipo_Ambiente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Codigo" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Tipo_Comprobante">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Comprobante" />
+    </Key>
+    <Property Name="Cod_Tipo_Comprobante" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Codigo" Type="char" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="Tipo_Documento">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Documento" />
+    </Key>
+    <Property Name="Cod_Tipo_Documento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Codigo" Type="char" MaxLength="2" />
+    <Property Name="DescripcionSRI" Type="varchar" MaxLength="30" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipo_Emision">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Emision" />
+    </Key>
+    <Property Name="Cod_Tipo_Emision" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Codigo" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Tipo_Facturacion">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Facturacion" />
+    </Key>
+    <Property Name="Cod_Tipo_Facturacion" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tipo_Inmueble">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Inmueble" />
+    </Key>
+    <Property Name="Cod_Tipo_Inmueble" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="Detalle" Type="varchar" MaxLength="150" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipo_Modificador">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Modificador" />
+    </Key>
+    <Property Name="Cod_Tipo_Modificador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipo_Modificador_Plu">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Modificador_Plu" />
+    </Key>
+    <Property Name="Cod_Tipo_Modificador_Plu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Tipo_Modificador" Type="int" />
+    <Property Name="Cod_Plu" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipo_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Tipo_Promocion" />
+    </Key>
+    <Property Name="Cod_Tipo_Promocion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TipoCCC">
+    <Key>
+      <PropertyRef Name="Cod_Canje" />
+    </Key>
+    <Property Name="Cod_Canje" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TipoFormaPago">
+    <Key>
+      <PropertyRef Name="Cod_TipoF" />
+    </Key>
+    <Property Name="Cod_TipoF" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Cod_Pais" Type="int" />
+  </EntityType>
+  <EntityType Name="TipoMov">
+    <Key>
+      <PropertyRef Name="Cod_TipMovInv" />
+    </Key>
+    <Property Name="Cod_TipMovInv" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Inicial_Secuencia" Type="char" MaxLength="1" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Tipo" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TipoRestaurante">
+    <Key>
+      <PropertyRef Name="Cod_TipoRestaurante" />
+    </Key>
+    <Property Name="Cod_TipoRestaurante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TiposCuenta">
+    <Key>
+      <PropertyRef Name="Cod_Tipo" />
+    </Key>
+    <Property Name="Cod_Tipo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="Modulo" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="Cod_Ubicacion" />
+    </Key>
+    <Property Name="Cod_Ubicacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="nchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="UbicacionCadena">
+    <Key>
+      <PropertyRef Name="Cod_Ubicacion_Cadenas" />
+    </Key>
+    <Property Name="Cod_Ubicacion_Cadenas" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Ubicacion" Type="int" />
+    <Property Name="Cod_Cadena" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Unidades">
+    <Key>
+      <PropertyRef Name="Cod_Unidad" />
+    </Key>
+    <Property Name="Cod_Unidad" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="80" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="UserRestaurante">
+    <Key>
+      <PropertyRef Name="Cod_UserRestaurante" />
+    </Key>
+    <Property Name="Cod_UserRestaurante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Usuario" Type="int" />
+    <Property Name="Cod_Restaurante" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Cod_Usuario" />
+    </Key>
+    <Property Name="Cod_Usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Perfil" Type="int" />
+    <Property Name="Usuario" Type="char" MaxLength="20" />
+    <Property Name="Clave" Type="varbinary" MaxLength="256" />
+    <Property Name="Iniciales" Type="char" MaxLength="6" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Fecha_creacion" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Zip">
+    <Key>
+      <PropertyRef Name="Cod_ZipCode" />
+    </Key>
+    <Property Name="Cod_ZipCode" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Cod_Area" Type="int" />
+    <Property Name="Cod_Zona" Type="int" />
+    <Property Name="Cod_Zip" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Zip_Calle">
+    <Key>
+      <PropertyRef Name="Cod_ZipCode" />
+      <PropertyRef Name="Cod_Calle" />
+    </Key>
+    <Property Name="Cod_ZipCode" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Cod_Calle" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Zip_Promocion">
+    <Key>
+      <PropertyRef Name="Cod_Promocion" />
+      <PropertyRef Name="Cod_ZipCode" />
+    </Key>
+    <Property Name="Cod_Promocion" Type="int" Nullable="false" />
+    <Property Name="Cod_ZipCode" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Numero" Type="int" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="Cod_Zona" />
+    </Key>
+    <Property Name="Cod_Zona" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <Association Name="FK_Articulos_GruposArt">
+    <End Role="GruposArt" Type="SqlGerenteModel.Store.GruposArt" Multiplicity="0..1" />
+    <End Role="Articulos" Type="SqlGerenteModel.Store.Articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GruposArt">
+        <PropertyRef Name="Cod_GrupoArt" />
+      </Principal>
+      <Dependent Role="Articulos">
+        <PropertyRef Name="Cod_GrupoArt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cadena_Pais">
+    <End Role="Pais" Type="SqlGerenteModel.Store.Pais" Multiplicity="0..1" />
+    <End Role="Cadena" Type="SqlGerenteModel.Store.Cadena" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="Cod_Pais" />
+      </Principal>
+      <Dependent Role="Cadena">
+        <PropertyRef Name="Cod_Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_clave_contingencia_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Store.Restaurante" Multiplicity="0..1" />
+    <End Role="clave_contingencia" Type="SqlGerenteModel.Store.clave_contingencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurante">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Principal>
+      <Dependent Role="clave_contingencia">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Configuracion_Domicilio_Tipo_Facturacion">
+    <End Role="Tipo_Facturacion" Type="SqlGerenteModel.Store.Tipo_Facturacion" Multiplicity="0..1" />
+    <End Role="Configuracion_Domicilio" Type="SqlGerenteModel.Store.Configuracion_Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Facturacion">
+        <PropertyRef Name="Cod_Tipo_Facturacion" />
+      </Principal>
+      <Dependent Role="Configuracion_Domicilio">
+        <PropertyRef Name="Tipo_Facturacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONVERT_REFERENCE_UNIDADES">
+    <End Role="Unidades" Type="SqlGerenteModel.Store.Unidades" Multiplicity="0..1" />
+    <End Role="Conversion" Type="SqlGerenteModel.Store.Conversion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unidades">
+        <PropertyRef Name="Cod_Unidad" />
+      </Principal>
+      <Dependent Role="Conversion">
+        <PropertyRef Name="Desde" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Convert_Unidades">
+    <End Role="Unidades" Type="SqlGerenteModel.Store.Unidades" Multiplicity="0..1" />
+    <End Role="Conversion" Type="SqlGerenteModel.Store.Conversion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unidades">
+        <PropertyRef Name="Cod_Unidad" />
+      </Principal>
+      <Dependent Role="Conversion">
+        <PropertyRef Name="Hasta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Factura_Plu_Promocion">
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Store.Plu_Promocion" Multiplicity="0..1" />
+    <End Role="Detalle_Factura" Type="SqlGerenteModel.Store.Detalle_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plu_Promocion">
+        <PropertyRef Name="Cod_Plu_Promocion" />
+      </Principal>
+      <Dependent Role="Detalle_Factura">
+        <PropertyRef Name="Cod_Plu_Promocion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Nota_Credito_Nota_Credito">
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Store.Nota_Credito" Multiplicity="0..1" />
+    <End Role="Detalle_Nota_Credito" Type="SqlGerenteModel.Store.Detalle_Nota_Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nota_Credito">
+        <PropertyRef Name="Cod_Nota_Credito" />
+      </Principal>
+      <Dependent Role="Detalle_Nota_Credito">
+        <PropertyRef Name="Cod_Nota_Credito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Detalle_Nota_Credito_Plu_Promocion">
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Store.Plu_Promocion" Multiplicity="0..1" />
+    <End Role="Detalle_Nota_Credito" Type="SqlGerenteModel.Store.Detalle_Nota_Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plu_Promocion">
+        <PropertyRef Name="Cod_Plu_Promocion" />
+      </Principal>
+      <Dependent Role="Detalle_Nota_Credito">
+        <PropertyRef Name="Cod_Plu_Promocion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DinDomicilio_Motorolos">
+    <End Role="Motorolos" Type="SqlGerenteModel.Store.Motorolos" Multiplicity="1" />
+    <End Role="DinDomicilio" Type="SqlGerenteModel.Store.DinDomicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Motorolos">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Principal>
+      <Dependent Role="DinDomicilio">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Store.Cliente_Domicilio" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Store.Factura_Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente_Domicilio">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Principal>
+      <Dependent Role="Factura_Domicilio">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Motorolos">
+    <End Role="Motorolos" Type="SqlGerenteModel.Store.Motorolos" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Store.Factura_Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Motorolos">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Principal>
+      <Dependent Role="Factura_Domicilio">
+        <PropertyRef Name="Cod_Motorolo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Domicilio_Periodo">
+    <End Role="Periodo" Type="SqlGerenteModel.Store.Periodo" Multiplicity="0..1" />
+    <End Role="Factura_Domicilio" Type="SqlGerenteModel.Store.Factura_Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periodo">
+        <PropertyRef Name="Cod_Periodo" />
+      </Principal>
+      <Dependent Role="Factura_Domicilio">
+        <PropertyRef Name="Cod_Periodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_FormasPago">
+    <End Role="FormasPago" Type="SqlGerenteModel.Store.FormasPago" Multiplicity="1" />
+    <End Role="Factura_FormasPago" Type="SqlGerenteModel.Store.Factura_FormasPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormasPago">
+        <PropertyRef Name="Cod_FormaPago" />
+      </Principal>
+      <Dependent Role="Factura_FormasPago">
+        <PropertyRef Name="Cod_FormaPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormasPago_TipoFormaPago">
+    <End Role="TipoFormaPago" Type="SqlGerenteModel.Store.TipoFormaPago" Multiplicity="0..1" />
+    <End Role="FormasPago" Type="SqlGerenteModel.Store.FormasPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoFormaPago">
+        <PropertyRef Name="Cod_TipoF" />
+      </Principal>
+      <Dependent Role="FormasPago">
+        <PropertyRef Name="Cod_TipoF" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Motorolos_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Store.Restaurante" Multiplicity="0..1" />
+    <End Role="Motorolos" Type="SqlGerenteModel.Store.Motorolos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurante">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Principal>
+      <Dependent Role="Motorolos">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NivelesPyG_NivelesPyG1">
+    <End Role="NivelesPyG" Type="SqlGerenteModel.Store.NivelesPyG" Multiplicity="0..1" />
+    <End Role="NivelesPyG1" Type="SqlGerenteModel.Store.NivelesPyG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NivelesPyG">
+        <PropertyRef Name="Cod_Grupo" />
+      </Principal>
+      <Dependent Role="NivelesPyG1">
+        <PropertyRef Name="Padre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nota_Credito_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Store.Cliente_Domicilio" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Store.Nota_Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente_Domicilio">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Principal>
+      <Dependent Role="Nota_Credito">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nota_Credito_Domicilio_Periodo">
+    <End Role="Periodo" Type="SqlGerenteModel.Store.Periodo" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Store.Nota_Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Periodo">
+        <PropertyRef Name="Cod_Periodo" />
+      </Principal>
+      <Dependent Role="Nota_Credito">
+        <PropertyRef Name="Cod_Periodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nota_Credito_Tipo_Comprobante">
+    <End Role="Tipo_Comprobante" Type="SqlGerenteModel.Store.Tipo_Comprobante" Multiplicity="0..1" />
+    <End Role="Nota_Credito" Type="SqlGerenteModel.Store.Nota_Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Comprobante">
+        <PropertyRef Name="Cod_Tipo_Comprobante" />
+      </Principal>
+      <Dependent Role="Nota_Credito">
+        <PropertyRef Name="Cod_Tipo_Comprobante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Periodo_Restaurante">
+    <End Role="Restaurante" Type="SqlGerenteModel.Store.Restaurante" Multiplicity="0..1" />
+    <End Role="Periodo" Type="SqlGerenteModel.Store.Periodo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurante">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Principal>
+      <Dependent Role="Periodo">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Referencia_Promocion_Promociones">
+    <End Role="Promocion" Type="SqlGerenteModel.Store.Promocion" Multiplicity="1" />
+    <End Role="Plu_Promocion" Type="SqlGerenteModel.Store.Plu_Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promocion">
+        <PropertyRef Name="Cod_Promocion" />
+      </Principal>
+      <Dependent Role="Plu_Promocion">
+        <PropertyRef Name="Cod_Promocion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGION_REFERENCE_PAIS">
+    <End Role="Pais" Type="SqlGerenteModel.Store.Pais" Multiplicity="0..1" />
+    <End Role="Region" Type="SqlGerenteModel.Store.Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="Cod_Pais" />
+      </Principal>
+      <Dependent Role="Region">
+        <PropertyRef Name="Cod_Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RUBROS_REFERENCE_NIVELESP">
+    <End Role="NivelesPyG" Type="SqlGerenteModel.Store.NivelesPyG" Multiplicity="0..1" />
+    <End Role="Rubros" Type="SqlGerenteModel.Store.Rubros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NivelesPyG">
+        <PropertyRef Name="Cod_Grupo" />
+      </Principal>
+      <Dependent Role="Rubros">
+        <PropertyRef Name="Cod_Grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SECUENCI_RLSH_87_RESTAURA">
+    <End Role="Restaurante" Type="SqlGerenteModel.Store.Restaurante" Multiplicity="0..1" />
+    <End Role="Secuencia" Type="SqlGerenteModel.Store.Secuencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurante">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Principal>
+      <Dependent Role="Secuencia">
+        <PropertyRef Name="Cod_Restaurante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Secuencia_Domicilio_Tipo_Accion_Domi">
+    <End Role="Tipo_Accion_Domi" Type="SqlGerenteModel.Store.Tipo_Accion_Domi" Multiplicity="0..1" />
+    <End Role="Secuencia_Domicilio" Type="SqlGerenteModel.Store.Secuencia_Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Accion_Domi">
+        <PropertyRef Name="Cod_Accion_Domi" />
+      </Principal>
+      <Dependent Role="Secuencia_Domicilio">
+        <PropertyRef Name="Cod_Accion_Domi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Secuencia_TipoMov1">
+    <End Role="TipoMov" Type="SqlGerenteModel.Store.TipoMov" Multiplicity="0..1" />
+    <End Role="Secuencia" Type="SqlGerenteModel.Store.Secuencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMov">
+        <PropertyRef Name="Cod_TipMovInv" />
+      </Principal>
+      <Dependent Role="Secuencia">
+        <PropertyRef Name="Cod_Movimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telefono_Cliente_Cliente_Domicilio">
+    <End Role="Cliente_Domicilio" Type="SqlGerenteModel.Store.Cliente_Domicilio" Multiplicity="1" />
+    <End Role="Telefono_Cliente" Type="SqlGerenteModel.Store.Telefono_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente_Domicilio">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Principal>
+      <Dependent Role="Telefono_Cliente">
+        <PropertyRef Name="Cod_Cliente_Domicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telefonos_Inmueble">
+    <End Role="Inmueble" Type="SqlGerenteModel.Store.Inmueble" Multiplicity="0..1" />
+    <End Role="Telefonos" Type="SqlGerenteModel.Store.Telefonos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inmueble">
+        <PropertyRef Name="Cod_Inmueble" />
+      </Principal>
+      <Dependent Role="Telefonos">
+        <PropertyRef Name="Cod_Inmueble" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Auditoria_Domicilio' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Auditoria_Domicilio">
+        <Property Name="Cod_Auditoria_Domicilio" Type="uniqueidentifier" />
+        <Property Name="Cod_Restaurante" Type="int" />
+        <Property Name="Cod_Usuario" Type="int" />
+        <Property Name="Fecha_Auditoria" Type="datetime" />
+        <Property Name="Modulo" Type="varchar" MaxLength="50" />
+        <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+        <Property Name="Accion" Type="varchar" MaxLength="25" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.ConsolidadoDomicilio' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="ConsolidadoDomicilio">
+        <Property Name="Cod_Cadena" Type="int" />
+        <Property Name="Cod_Restaurante" Type="int" />
+        <Property Name="Cod_Area" Type="int" />
+        <Property Name="Cod_Cliente" Type="varchar" MaxLength="30" />
+        <Property Name="Nombre" Type="varchar" MaxLength="250" />
+        <Property Name="Zip" Type="varchar" MaxLength="12" />
+        <Property Name="NumTransaccion" Type="int" />
+        <Property Name="Valor" Type="float" />
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="Hora" Type="varchar" MaxLength="50" />
+        <Property Name="Telefono" Type="varchar" MaxLength="12" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Consumidor_Final' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Consumidor_Final">
+        <Property Name="Codigo" Type="char" MaxLength="2" />
+        <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+        <Property Name="Documento" Type="varchar" MaxLength="50" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Factura_Motorolo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Factura_Motorolo">
+        <Property Name="Cod_Motorolo" Type="int" />
+        <Property Name="Cod_Factura" Type="varchar" MaxLength="30" />
+        <Property Name="Cod_Periodo" Type="varchar" MaxLength="12" />
+        <Property Name="Cod_Estado" Type="int" />
+        <Property Name="Fecha" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Horas' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Horas">
+        <Property Name="Hora_Inicio" Type="varchar" MaxLength="5" />
+        <Property Name="Hora_Fin" Type="varchar" MaxLength="5" />
+        <Property Name="Estado" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Log_Autorizado_Factura' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Log_Autorizado_Factura">
+        <Property Name="Cod_Factura" Type="varchar" MaxLength="30" />
+        <Property Name="Fecha_Autorizado" Type="datetime" />
+        <Property Name="Numero_Autorizado" Type="varchar" MaxLength="50" />
+        <Property Name="Mensaje" Type="varchar" MaxLength="600" />
+        <Property Name="Fecha" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Modificador_Detalle_Factura' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Modificador_Detalle_Factura">
+        <Property Name="Cod_Detalle_Factura" Type="varchar" MaxLength="100" />
+        <Property Name="Cod_Modificador" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Motivo_Anulacion' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Motivo_Anulacion">
+        <Property Name="Cod_Motivo" Type="int" />
+        <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+        <Property Name="Estado" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'SqlGerente.dbo.Plu_Paquete' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Plu_Paquete">
+        <Property Name="Cod_Plu" Type="int" />
+        <Property Name="Cod_Paquete" Type="int" />
+      </EntityType>-->
+</Schema>

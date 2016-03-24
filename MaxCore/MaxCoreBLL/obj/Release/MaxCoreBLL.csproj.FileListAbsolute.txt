@@ -1,0 +1,9 @@
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreBLL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreBLL.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreBE.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreDAL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreBE.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\bin\Release\MaxCoreDAL.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\obj\Release\MaxCoreBLL.csprojResolveAssemblyReference.cache
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\obj\Release\MaxCoreBLL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBLL\obj\Release\MaxCoreBLL.pdb

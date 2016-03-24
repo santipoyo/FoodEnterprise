@@ -1,0 +1,11 @@
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreWS.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreWS.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreBE.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreBLL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreDAL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreBE.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreBLL.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\bin\MaxCoreDAL.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\obj\Release\MaxCoreWS.csprojResolveAssemblyReference.cache
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\obj\Release\MaxCoreWS.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreWS\obj\Release\MaxCoreWS.pdb
