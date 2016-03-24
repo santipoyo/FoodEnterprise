@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="95e3e30768d34a3bac703d277b60ef60" Name="Diagram1">
+        <EntityTypeShape EntityType="SqlGerenteModel.Acceso" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Area" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Articulos" Width="1.5" PointX="20" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Cadena" Width="1.5" PointX="13" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Calle" Width="1.5" PointX="9.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Calle_Restaurante" Width="1.5" PointX="11.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Calles_Back" Width="1.5" PointX="13.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Categoria" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Ciudad" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Clasificacion" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.clave_contingencia" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Cliente_Domicilio" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.ClientesAx" Width="1.5" PointX="15.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Compania" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Config_RecetaSugerencia" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Configuracion_Domicilio" Width="1.5" PointX="18" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Conversion" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.DeptoPlus" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Descuentos_Cadena" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Detalle_Factura" Width="1.5" PointX="7.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Detalle_Nota_Credito" Width="1.5" PointX="7.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.DinDomicilio" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Domicilio_Cierre" Width="1.5" PointX="9.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Domicilio_Mix" Width="1.5" PointX="11.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Empresa" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Empresas" Width="1.5" PointX="17.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.EnvioCorreos" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Estados_Domicilio" Width="1.5" PointX="19.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Factura_Anulacion" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Factura_Domicilio" Width="1.5" PointX="8.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Factura_FormasPago" Width="1.5" PointX="15.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.FormasPago" Width="1.5" PointX="13" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.GruposArt" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Impuestos" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Inmueble" Width="1.5" PointX="17.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Log_Facturacion_Electronica" Width="1.5" PointX="24.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Modificador" Width="1.5" PointX="24.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Motorolos" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.NivelesPyG" Width="1.5" PointX="8.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Nota_Credito" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Pais" Width="1.5" PointX="10.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Pantalla" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Paquete" Width="1.5" PointX="13.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Perfil" Width="1.5" PointX="24.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Periodo" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.PermisosPerfil" Width="1.5" PointX="24.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Personal_Domicilio" Width="1.5" PointX="24.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Plu_Promocion" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Plu_Sujeto" Width="1.5" PointX="21.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Plus" Width="1.5" PointX="23.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Precio_plu" Width="1.5" PointX="25.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Promocion" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Proveedor" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Provincia" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Recetas" Width="1.5" PointX="26.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.RecetaSugerencia" Width="1.5" PointX="9.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Region" Width="1.5" PointX="13" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Respuesta_Autorizacion_Comprobante" Width="1.5" PointX="26.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Respuesta_Recepcion_Comprobante" Width="1.5" PointX="26.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Restaurante" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Rubros" Width="1.5" PointX="11" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Secuencia" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Secuencia_Domicilio" Width="1.5" PointX="18" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.SubRecet" Width="1.5" PointX="26.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.SubRecetaTrans" Width="1.5" PointX="11.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.sysdiagrams" Width="1.5" PointX="13.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Telefono_Cliente" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Telefonos" Width="1.5" PointX="20" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Accion_Domi" Width="1.5" PointX="15.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Ambiente" Width="1.5" PointX="19.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Comprobante" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Documento" Width="1.5" PointX="27.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Emision" Width="1.5" PointX="27.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Facturacion" Width="1.5" PointX="15.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Inmueble" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Modificador" Width="1.5" PointX="0.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Modificador_Plu" Width="1.5" PointX="2.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Tipo_Promocion" Width="1.5" PointX="28.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.TipoCCC" Width="1.5" PointX="4.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.TipoFormaPago" Width="1.5" PointX="10.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.TipoMov" Width="1.5" PointX="3.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.TipoRestaurante" Width="1.5" PointX="28.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.TiposCuenta" Width="1.5" PointX="6.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Ubicacion" Width="1.5" PointX="28.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.UbicacionCadena" Width="1.5" PointX="28.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Unidades" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.UserRestaurante" Width="1.5" PointX="28.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Users" Width="1.5" PointX="15.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Zip" Width="1.5" PointX="28.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Zip_Calle" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Zip_Promocion" Width="1.5" PointX="29.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SqlGerenteModel.Zona" Width="1.5" PointX="21.75" PointY="29.75" IsExpanded="true" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Articulos_GruposArt" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Cadena_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_clave_contingencia_Restaurante" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Factura_Domicilio_Cliente_Domicilio" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Nota_Credito_Cliente_Domicilio" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Telefono_Cliente_Cliente_Domicilio" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Configuracion_Domicilio_Tipo_Facturacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_CONVERT_REFERENCE_UNIDADES" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Convert_Unidades" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Detalle_Factura_Plu_Promocion" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Detalle_Nota_Credito_Nota_Credito" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Detalle_Nota_Credito_Plu_Promocion" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_DinDomicilio_Motorolos" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Factura_Domicilio_Motorolos" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Factura_Domicilio_Periodo" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Factura_FormasPago" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_FormasPago_TipoFormaPago" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Telefonos_Inmueble" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Motorolos_Restaurante" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_NivelesPyG_NivelesPyG1" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_RUBROS_REFERENCE_NIVELESP" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Nota_Credito_Domicilio_Periodo" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Nota_Credito_Tipo_Comprobante" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_REGION_REFERENCE_PAIS" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Periodo_Restaurante" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Referencia_Promocion_Promociones" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_SECUENCI_RLSH_87_RESTAURA" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Secuencia_TipoMov1" ManuallyRouted="false" />
+        <AssociationConnector Association="SqlGerenteModel.FK_Secuencia_Domicilio_Tipo_Accion_Domi" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,8 @@
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\bin\Release\MaxCoreDAL.dll.config
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\bin\Release\MaxCoreDAL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\bin\Release\MaxCoreDAL.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\bin\Release\MaxCoreBE.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\bin\Release\MaxCoreBE.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\obj\Release\MaxCoreDAL.csprojResolveAssemblyReference.cache
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\obj\Release\MaxCoreDAL.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreDAL\obj\Release\MaxCoreDAL.pdb

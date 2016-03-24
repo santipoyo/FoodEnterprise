@@ -1,0 +1,5 @@
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBE\bin\Debug\MaxCoreBE.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBE\bin\Debug\MaxCoreBE.pdb
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBE\obj\Debug\MaxCoreBE.csprojResolveAssemblyReference.cache
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBE\obj\Debug\MaxCoreBE.dll
+D:\Milton\Documents\Workdir\Tests\MaxCore\MaxCoreBE\obj\Debug\MaxCoreBE.pdb
